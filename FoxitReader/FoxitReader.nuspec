@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>FoxitReader</id>
+    <title>Foxit Reader</title>
+    <version>5.1.4</version>
+    <authors>Foxit Software</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>Foxit Reader: The Best PDF Reader</summary>
+    <description>Whether you're a consumer, business, government agency, or educational organization, you need to read and annotate PDF documents and fill out PDF forms. You need your PDF Reader to be:
+Fast - so you're not waiting forever to read files.
+Lightweight - so it's easily deployable and doesn't exhaust system resources.
+Secure - so you don't get infected with viruses and can keep sensitive information safe.
+A Platform - so you can extend the Reader by creating your own value added capabilities for internal use or for resale.</description>
+    <projectUrl>http://foxitsoftware.com/Secure_PDF_Reader/</projectUrl>
+    <tags>Foxit Reader pdf</tags>
+    <licenseUrl>http://foxitsoftware.com/pdf/rd_eula.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://www.foxitsoftware.com/downloads/require/resource/images/icons/reader.png</iconUrl>
+  </metadata>
+</package>

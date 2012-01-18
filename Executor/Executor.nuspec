@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Executor</id>
+        <title>Executor</title>
+        <version>0.99.11</version>
+        <authors>Martin Bresson</authors>
+        <owners>H. Alan Stevens</owners>
+        <summary>This is a multi purpose launcher and a more advanced and customizable version of windows run. The program originated as I was sick of spending too much time searching for programs through my ever growing windows start-menu, and also I missed a tool that could ease and optimize my daily work flow. There was of course already programs like this available, but each had it's annoyance or missing features or too(!) geeky.</summary>
+        <description>Features...
+
+Keywords have properties like shortcuts, and you can for example drag-drop a shortcut/file/folder/favorite to add it as a keyword.
+Auto-completion for keywords, file system and history (can also be configured).
+Url detection, Enter URLs directly (like www.google.com, mail.google.com, google.com or http://www.google.com).
+Keywords support parameters. Example "google latest executor" "wiki nirvana".
+Besides keywords Executor can also optionally and dynamically add matching start-menu items, control panel items and other handy items to the drop-down/list.
+Ability to add your own paths to scan for user defined file extensions.
+Keyword "find [text]" for using Windows Instant Search (Vista/Win7) feature or Windows Desktop Search (WDS for XP etc.).
+Can add keyword integration with popular services like GMail, Twitter, GCal, RTM and many others (see forums for howto's, tutorials and tips).
+Optional show icon for current keyword/input.
+Optional show drop-down box for current keyword/input (auto-completion).
+Optional drop-down box can be set to auto-open (like windows run) displaying auto-completion suggestions.
+Optional Vista like list displaying matching items.
+Layout can be customized. Set colors, font, dimensions, position, transparency and more.
+Skinable. Supporting alpha blending effects and free positioning of all elements.
+Each keyword can be assigned a hotkey, so Executor can also perform like many popular hotkey managers.
+Many settings to customize the program as you like.
+Can be launched from an user defined hotkey.
+One keyword or text input can start multiple keywords/urls/programs/documents/files etc. Example one keyword opens three websites and/or programs.
+Each keyword have properties like optional group (to organize into groups), customizable icon and other properties.
+A number of special commands (like for example pause and replace tag with parameter).
+Optional windows context-menu integration (as another way of easily adding new keywords).
+Optional show title for the current input.
+Can import keywords from windows start-menu.
+Can auto import keywords from an url on startup, so you can share keywords between different Executor installations (for example for cooperate use).
+Executor has a number settings on how you want it to find desired item(s). Text could "start with" or "contain text" (substring) or short form detection (for example typing ffox for firefox).
+All file-paths can be auto-completed (also when file-path is a parameter).
+Keywords to manipulate the current active window (center, resize to specific size, maximize width or height etc).
+Special keywords to list (and open) running applications, text previously copied to clipboard and recent documents. Can also strip formatting from clipboard text.
+Many special keywords like for example lock computer, restart, shutdown, standby, turn off monitor, mute sound, show date/time/week number etc.
+Shortcut keys for faster navigation.
+Integrated calculator.
+Import/Export keywords (import can also import directly from an url rather than a file).
+Option to override windows run hotkey (Win-R).
+Optional sounds.
+Integrated Windows context-menu (for example when right-clicking list items).
+At startup a number of keywords/commands optionally be launched.
+Set simple a simple alarm, timer, stop-watch (with optional alert sound).
+Pressing enter with no valid input will launch first suggested item (optional).
+Be able to grab text from hidden launched console applications and display text in input or in multi-lined text.
+Several hidden experimental/minor settings to play with (Example show time/date/other stuff when idle).
+Plus more...
+Freeware.
+Free for commercial use.
+        </description>
+        <projectUrl>http://executor.dk/</projectUrl>
+        <tags>executor run launcher</tags>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <!--<iconUrl></iconUrl>-->
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>

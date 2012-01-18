@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SublimeText</id>
+    <title>Sublime Text</title>
+    <version>2.2165</version>
+    <authors>Sublime HQ Pty Ltd</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>Sublime Text is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
+    <description>Sublime Text is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</description>
+    <projectUrl>http://www.sublimetext.com</projectUrl>
+    <tags>Sublime Text editor</tags>
+    <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://www.sublimetext.com/favicon.ico</iconUrl>
+  </metadata>
+</package>

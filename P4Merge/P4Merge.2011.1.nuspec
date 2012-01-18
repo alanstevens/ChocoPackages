@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>2011.1</version>
+    <authors>Perforce Software,Inc.</authors>
+    <owners>H. Alan Stevens</owners>
+    <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
+    <projectUrl>http://www.perforce.com/product/components/perforce_visual_merge_and_diff_tools</projectUrl>
+    <iconUrl>http://icons.alternativeto.net/a9241f90-a45d-df11-82d2-0022190f5762_2461.png</iconUrl>
+    <id>P4Merge</id>
+    <title>P4Merge, the Perforce Visual Merge Tool</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Perforce Visual Merge and Diff Tools
+Perforce's merge and diff tools provide a unique perspective into the context in which change happens. The effects of past and pending work can be tracked and con</description>
+    <summary>P4Merge is an excellent, free diff and merge tool.</summary>
+    <!--<releaseNotes>http://www.perforce.com/perforce/doc.current/user/p4vmergenotes.txt</releaseNotes>
+    <copyright>Copyright "2011" Perforce Software, Inc.</copyright>-->
+    <tags>diff merge</tags>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+  </files>
+</package>

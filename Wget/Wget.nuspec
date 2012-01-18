@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Wget</id>
+    <title>Wget</title>
+    <version>1.11.4</version>
+    <authors>Giuseppe Scrivano</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>GNU Wget is a free software package for retrieving files using HTTP, HTTPS and FTP, the most widely-used Internet protocols. It is a non-interactive commandline tool, so it may easily be called from scripts, cron jobs, terminals without X-Windows support, etc.</summary>
+    <description>GNU Wget has many features to make retrieving large files or mirroring entire web or FTP sites easy, including:
+
+Can resume aborted downloads, using REST and RANGE
+Can use filename wild cards and recursively mirror directories
+NLS-based message files for many different languages
+Optionally converts absolute links in downloaded documents to relative, so that downloaded documents may link to each other locally
+Runs on most UNIX-like operating systems as well as Microsoft Windows
+Supports HTTP proxies
+Supports HTTP cookies
+Supports persistent HTTP connections
+Unattended / background operation
+Uses local file timestamps to determine whether documents need to be re-downloaded when mirroring
+GNU Wget is distributed under the GNU General Public License.
+</description>
+    <projectUrl>http://users.ugent.be/~bpuype/wget/</projectUrl>
+    <tags>wget http download</tags>
+    <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl></iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>

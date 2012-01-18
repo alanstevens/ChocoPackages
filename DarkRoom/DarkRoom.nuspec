@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DarkRoom</id>
+    <title>Dark Room</title>
+    <version>0.8</version>
+    <authors>Jeffrey Fuller</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>Dark Room is a full screen, distraction free, writing environment.</summary>
+    <description>Dark Room is a clone of the original WriteRoom that is an OS X (tiger) exclusive application. It is a child of necessity, as there were no viable alternatives in Windows to produce the same behavior.</description>
+    <projectUrl>https://github.com/jjafuller/DarkRoomW</projectUrl>
+    <tags>distraction free text editor</tags>
+    <licenseUrl>https://raw.github.com/jjafuller/DarkRoomW/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
