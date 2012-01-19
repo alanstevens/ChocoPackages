@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>SublimeText</id>
-    <title>Sublime Text</title>
+    <id>sublimetext2</id>
+    <title>Sublime Text 2</title>
     <version>2.2165</version>
-    <authors>Sublime HQ Pty Ltd</authors>
-    <owners>H. Alan Stevens</owners>
-    <summary>Sublime Text is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
-    <description>Sublime Text is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</description>
-    <projectUrl>http://www.sublimetext.com</projectUrl>
-    <tags>Sublime Text editor</tags>
+    <authors>Jon Skinner</authors>
+    <owners>Jon Galloway</owners>
+    <summary>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
+    <description>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This brings the Sublime Text portable version to your system</description>
+    <projectUrl>http://www.sublimetext.com/2</projectUrl>
     <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
+    <tags>sublime text editor chocolatey</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.sublimetext.com/favicon.ico</iconUrl>
   </metadata>

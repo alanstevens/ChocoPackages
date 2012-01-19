@@ -1,0 +1,9 @@
+Accessibility,Admin,Archive,Audio,
+
+Database,Devel,Doc,Editors,Games, -FAILED
+
+Gnome,Graphics,Interpreters,Kde,Libs,
+
+Mail,Math,Mingw,Net,Perl,Publishing,
+
+Python,Science,Security,Shells,System,Text,Utils,Web,X11
