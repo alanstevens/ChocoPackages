@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ActivePerl</id>
+        <title>Active Perl Community Edition</title>
+        <version>5.14.2</version>
+        <authors>ActiveState</authors>
+        <owners>H. Alan Stevens</owners>
+        <summary>ActivePerl is the leading commercial-grade distribution of the open source Perl scripting language. Download ActivePerl Community Edition free binaries for your development projects and internal deployments.</summary>
+        <description>ActivePerl is the leading commercial-grade distribution of the open source Perl scripting language. Download ActivePerl Community Edition free binaries for your development projects and internal deployments.
+        </description>
+        <projectUrl>http://www.activestate.com/activeperl/downloads</projectUrl>
+        <tags>perl chocolatey</tags>
+        <licenseUrl>http://www.activestate.com/activeperl/license-agreement</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>http://www.activestate.com/sites/default/files/page/top_image/activeperldownload_headernew_0_0.png?1279571074</iconUrl>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
