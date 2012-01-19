@@ -1,8 +1,8 @@
-Accessibility,Admin,Archive,Audio,
+Accessibility,Admin,Archive,Audio, -PASSED
 
 Database,Devel,Doc,Editors,Games, -FAILED
 
-Gnome,Graphics,Interpreters,Kde,Libs,
+Gnome,Graphics,Interpreters,Kde,Libs, -FAILED
 
 Mail,Math,Mingw,Net,Perl,Publishing,
 
