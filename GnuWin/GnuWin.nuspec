@@ -15,7 +15,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>http://a.fsdn.com/con/icons/gn/gnuwin32@sf.net/gnuwin.png</iconUrl>
         <dependencies>
-            <dependency id="7Zip" version>="9.22" />
+            <dependency id="7Zip" />
         </dependencies>
     </metadata>
 </package>

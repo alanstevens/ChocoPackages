@@ -11,7 +11,7 @@
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <projectUrl>http://filehippo.com/download_icofx/6890/</projectUrl>
         <tags>icon editor chocolatey</tags>
-        <licenseUrl>Shareware</licenseUrl>
+        <!-- <licenseUrl>Shareware</licenseUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/IcoFx/IcoFx.png</iconUrl>
   </metadata>
