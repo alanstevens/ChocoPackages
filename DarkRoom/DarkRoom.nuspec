@@ -3,14 +3,16 @@
   <metadata>
     <id>DarkRoom</id>
     <title>Dark Room</title>
-    <version>0.8</version>
+    <version>0.8.01</version>
     <authors>Jeffrey Fuller</authors>
     <owners>H. Alan Stevens</owners>
     <summary>Dark Room is a full screen, distraction free, writing environment.</summary>
-    <description>Dark Room is a clone of the original WriteRoom that is an OS X (tiger) exclusive application. It is a child of necessity, as there were no viable alternatives in Windows to produce the same behavior.</description>
+    <description>Dark Room is a clone of the original WriteRoom that is an OS X (tiger) exclusive application. It is a child of necessity, as there were no viable alternatives in Windows to produce the same behavior.
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>https://github.com/jjafuller/DarkRoomW</projectUrl>
-    <tags>distraction free text editor</tags>
+    <tags>distraction free text editor chocolatey</tags>
     <licenseUrl>https://raw.github.com/jjafuller/DarkRoomW/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/DarkRoom/DarkRoom.png</iconUrl>
   </metadata>
 </package>

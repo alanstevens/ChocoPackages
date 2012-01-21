@@ -8,9 +8,9 @@
         <owners>H. Alan Stevens</owners>
         <summary></summary>
         <description>
-        </description>
+        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <projectUrl></projectUrl>
-        <tags></tags>
+        <tags> chocolatey</tags>
         <licenseUrl></licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <!--<iconUrl></iconUrl>-->

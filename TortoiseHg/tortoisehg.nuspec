@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TortoiseHG</id>
+    <title>TortoiseHG</title>
+    <version>2.2.2.01</version>
+    <authors>TortoiseHG</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>TortoiseHg is a set of graphical tools and a shell extension for the Mercurial distributed revision control system.</summary>
+    <description>TortoiseHg is a set of graphical tools and a shell extension for the Mercurial distributed revision control system. Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This will install TortoiseHG on your system!
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://tortoisehg.bitbucket.org</projectUrl>
+    <tags>tortoisehg hg mercurial chocolatey</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://mercurial.selenic.com/wiki/TortoiseHg?action=AttachFile&amp;do=get&amp;target=thg_logo_92x50.png</iconUrl>
+  </metadata>
+</package>

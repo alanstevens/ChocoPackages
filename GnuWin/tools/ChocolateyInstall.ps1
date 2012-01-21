@@ -1,7 +1,9 @@
 
 $packageName = 'GnuWin'
 $url = 'http://downloads.sourceforge.net/project/getgnuwin32/getgnuwin32/0.6.30/GetGnuWin32-0.6.3.exe'
-$installPath = join-path $env:systemdrive 'bin\GnuWin'
+$binRoot = "$env:systemdrive\"
+if($env:chocolatey_bin_path -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_path}
+$installPath = join-path $binRoot 'GnuWin'
 
 try {
     $chocTempDir = Join-Path $env:TEMP "chocolatey"

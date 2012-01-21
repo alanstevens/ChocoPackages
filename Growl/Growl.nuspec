@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Growl</id>
+        <title>Growl For Windows</title>
+        <version>2.0.8.01</version>
+        <authors>Brian Dunnington</authors>
+        <owners>H. Alan Stevens</owners>
+        <summary>Growl for Windows is a Windows-compatible version of Growl, a notification system for Mac OS X.</summary>
+        <description>Growl for Windows is a Windows-compatible version of Growl, a notification system for Mac OS X. Growl lets you know when things happen. Files finished downloading, friends came online, new email has arrived - Growl can let you know when any event occurs with a subtle notification. The rest of the time, Growl stays out of your way.
+        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        <projectUrl>http://www.growlforwindows.com/</projectUrl>
+        <tags>growl chocolatey</tags>
+        <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Growl/Growl.png</iconUrl>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>

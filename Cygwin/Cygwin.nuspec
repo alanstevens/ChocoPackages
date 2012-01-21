@@ -3,17 +3,17 @@
   <metadata>
     <id>Cygwin</id>
     <title>Cygwin</title>
-    <version>1.7.9</version>
+    <version>1.7.9.01</version>
     <authors>Red Hat, Inc.</authors>
     <owners>H. Alan Stevens</owners>
     <summary>Cygwin: Get that Linux feeling - on Windows!</summary>
     <description>Cygwin is a collection of tools which provide a Linux look and feel environment for Windows.
-        This package installs all packages except games, Gnome, KDE and X11 from the Virginia Tech Cygwin mirror.</description>
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This package installs all Cygwin packages from the Virginia Tech Cygwin mirror.</description>
     <projectUrl>http://www.cygwin.com/</projectUrl>
-    <tags>Cygwin Linux</tags>
+    <tags>Cygwin Linux chocolatey</tags>
     <licenseUrl>http://cygwin.com/licensing.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cygwin.de/cygwin-standalone-beveled.ico</iconUrl>
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Cygwin/Cygwin.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

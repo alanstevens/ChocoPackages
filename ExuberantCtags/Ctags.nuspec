@@ -3,12 +3,12 @@
     <metadata>
         <id>ctags</id>
         <title>Exuberant Ctags</title>
-        <version>5.8</version>
+        <version>5.8.01</version>
         <authors>Darren Hiebert</authors>
         <owners>H. Alan Stevens</owners>
         <summary>A multilanguage implementation of Ctags</summary>
         <description>Exuberant Ctags is a multilanguage implementation of Ctags. Ctags generates an index (or tag) file of language objects found in source files that allows these items to be quickly and easily located by a text editor or other utility. A tag signifies a language object for which an index entry is available (or, alternatively, the index entry created for that object).
-        </description>
+        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <projectUrl>http://ctags.sourceforge.net/</projectUrl>
         <tags>ctags vim chocolatey</tags>
         <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>

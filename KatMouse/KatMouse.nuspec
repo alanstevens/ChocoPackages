@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>KatMouse</id>
+    <title>KatMouse</title>
+    <version>1.4.01</version>
+    <authors>Eduard Hiti</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>Freeing mouse wheel scrolling from the keyboard focus!</summary>
+    <description>Freeing mouse wheel scrolling from the keyboard focus! The prime purpose of the KatMouse utility is to enhance the functionality of mice with a scroll wheel, offering 'universal' scrolling: moving the mouse wheel will scroll the window directly beneath the mouse cursor (not the one with the keyboard focus, which is default on Windows OSes). This is a major increase in the usefullness of the mouse wheel.
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://ehiti.de/katmouse/</projectUrl>
+    <tags>KatMouse scroll chocolatey</tags>
+    <!-- <licenseUrl></licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KatMouse/KatMouse.png</iconUrl>
+  </metadata>
+</package>

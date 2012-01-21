@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>AndaleMonoFont</id>
+        <title>Andale Mono</title>
+        <version>1.25.01</version>
+        <authors>Steven R. Matteson</authors>
+        <owners>H. Alan Stevens</owners>
+        <summary>Andale Mono is a highly legible monospaced font designed with the needs of terminal emulation and software development environments.</summary>
+        <description>Andale Mono is a highly legible monospaced font designed with the needs of terminal emulation and software development environments.
+        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        <projectUrl>http://sourceforge.net/projects/corefonts/</projectUrl>
+        <tags>font truetype andale mono chocolatey</tags>
+        <licenseUrl>http://corefonts.sourceforge.net/eula.htm</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>http://www.microsoft.com/typography/fonts/images/Andale-Mono.png</iconUrl>
+        <dependencies>
+      <dependency id="7zip.commandline" />
+    </dependencies>
+  </metadata>
+</package>
