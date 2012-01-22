@@ -1,21 +1,18 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>ctags</id>
-        <title>Exuberant Ctags</title>
-        <version>5.8.01</version>
-        <authors>Darren Hiebert</authors>
-        <owners>H. Alan Stevens</owners>
-        <summary>A multilanguage implementation of Ctags</summary>
-        <description>Exuberant Ctags is a multilanguage implementation of Ctags. Ctags generates an index (or tag) file of language objects found in source files that allows these items to be quickly and easily located by a text editor or other utility. A tag signifies a language object for which an index entry is available (or, alternatively, the index entry created for that object).
-        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
-        <projectUrl>http://ctags.sourceforge.net/</projectUrl>
-        <tags>ctags vim chocolatey</tags>
-        <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>http://ctags.sourceforge.net/ctags.png</iconUrl>
-        <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+  <metadata>
+    <id>ctags</id>
+    <title>Exuberant Ctags</title>
+    <version>5.8.1</version>
+    <authors>Darren Hiebert</authors>
+    <owners>H. Alan Stevens</owners>
+    <summary>A multilanguage implementation of Ctags</summary>
+    <description>Exuberant Ctags is a multilanguage implementation of Ctags. Ctags generates an index (or tag) file of language objects found in source files that allows these items to be quickly and easily located by a text editor or other utility. A tag signifies a language object for which an index entry is available (or, alternatively, the index entry created for that object).
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://ctags.sourceforge.net/</projectUrl>
+    <tags>ctags vim chocolatey</tags>
+    licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
+    <iconUrl>http://ctags.sourceforge.net/ctags.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>
