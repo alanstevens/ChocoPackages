@@ -1,0 +1,4 @@
+
+cinst ruby -version 1.9.2.291 -ia /dir=C:\bin\Ruby1.9.2
+
+cinst ruby -version 1.8.7.357 -ia /dir=C:\bin\Ruby1.8.7
