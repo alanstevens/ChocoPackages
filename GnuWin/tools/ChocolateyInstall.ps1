@@ -2,6 +2,8 @@
 $packageName = 'GnuWin'
 $url = 'http://downloads.sourceforge.net/project/getgnuwin32/getgnuwin32/0.6.30/GetGnuWin32-0.6.3.exe'
 $binRoot = "$env:systemdrive\"
+
+### Using an environment variable to to define the bin root until we implement YAML configuration ###
 if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
 $installPath = join-path $binRoot 'GnuWin'
 

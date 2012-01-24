@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id></id>
-        <title></title>
         <version></version>
+        <title></title>
         <authors></authors>
         <owners>H. Alan Stevens</owners>
-        <summary></summary>
+        <licenseUrl></licenseUrl>
+        <projectUrl></projectUrl>
+        <!--<iconUrl></iconUrl>-->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
-        <projectUrl></projectUrl>
+        <summary></summary>
         <tags> chocolatey</tags>
-        <licenseUrl></licenseUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <!--<iconUrl></iconUrl>-->
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

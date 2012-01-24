@@ -1,5 +1,3 @@
-$packageName = 'KickAssVim'
-
 $toolsPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $parentPath = join-path $toolsPath '..'
 $contentPath = join-path $parentPath 'content'
