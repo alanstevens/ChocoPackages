@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <metadata>
+        <id>kickassvim</id>
+        <title>Kick Ass Vim</title>
+        <version>7.3.0.01</version>
+        <authors>H. Alan Stevens</authors>
+        <owners>H. Alan Stevens</owners>
+        <summary>Enhancements to Vim on Windows.</summary>
+        <description>Enhancements to Vim on Windows including an 'Edit with Vim' right click menu and a batch file for launching GVim.
+            Both tools maintain a single instance of GVim and open documents in new tabs.
+            | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        <projectUrl>http://vim.org</projectUrl>
+        <tags>vim editor vi chocolatey</tags>
+        <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>https://github.com/alanstevens/chocopackages/raw/master/kickassvim/vim.png</iconUrl>
+        <dependencies>
+            <dependency id="vim" version="[7.3,]" />
+        </dependencies>
+    </metadata>
+</package>
