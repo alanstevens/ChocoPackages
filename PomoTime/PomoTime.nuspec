@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>PomoTime</id>
+        <version>1.8</version>
+        <title>PomoTime</title>
+        <authors>Antonio Fischett</authors>
+        <owners>H. Alan Stevens</owners>
+        <!-- <licenseUrl></licenseUrl>-->
+        <projectUrl>http://www.xoring.com/</projectUrl>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/PomoTime/PomoTime.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>PomoTime is a small and easy to use Windows application that can come in handy for people that use the Pomodoro Technique. The Pomodoro Technique is an easy and effective method to focus on your job, manage interruptions and increase productivity.
+        </description>
+        <summary>PomoTime is a small and easy to use Windows application that can come in handy for people that use the Pomodoro Technique.</summary>
+        <tags>pomodoro productivity</tags>
+  </metadata>
+</package>
