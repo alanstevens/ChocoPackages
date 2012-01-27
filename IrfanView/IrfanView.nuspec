@@ -7,10 +7,10 @@
         <authors>Irfan Skiljan</authors>
         <owners>H. Alan Stevens</owners>
         <summary>IrfanView is a very fast, small, compact and innovative FREEWARE (for non-commercial use) graphic viewer.</summary>
-        <description>IrfanView is a very fast, small, compact and innovative FREEWARE (for non-commercial use) graphic viewer for Windows 9x, ME, NT, 2000, XP, 2003 , 2008, Vista, Windows 7.
-        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        <description>IrfanView is a very fast, small, compact and innovative FREEWARE (for non-commercial use) graphic viewer for Windows.
+        </description>
         <projectUrl>http://www.irfanview.com/</projectUrl>
-        <tags>IrfanView chocolatey</tags>
+        <tags>IrfanView</tags>
         <licenseUrl>http://www.irfanview.com/eula.htm</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/IrfanView/IrfanView.png</iconUrl>
