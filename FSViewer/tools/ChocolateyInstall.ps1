@@ -1,26 +1,23 @@
-$packageName = ''
-$fileType = ''
-$silentArgs = ''
-$url = ''
-$url64bit = ''
+$packageName = 'FSViewer'
+$fileType = 'exe'
+$silentArgs = '/S'
+$url = 'http://www.faststonesoft.net/DN/FSViewerSetup46.exe'
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
+Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-$contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
 $programFiles = $env:programfiles
 if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
-
-$executable = join-path $programfiles '.exe'
+$fsViewer = join-path $programfiles 'FastStone Image Viewer\FSViewer.exe'
 
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
-$executable = $fsObject.GetFile("$executable").ShortPath
+$fsViewer = $fsObject.GetFile("$fsViewer").ShortPath
 
 #add batch file
-$batchFileName = Join-Path $nugetExePath "$packageName.bat"
+$batchFileName = Join-Path $nugetExePath "fsviewer.bat"
 
 "@echo off
 SET DIR=%~dp0%

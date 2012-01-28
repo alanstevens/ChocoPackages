@@ -1,0 +1,49 @@
+
+[version]
+Signature="$Windows NT$"
+
+[BrowseWithFsViewerInstall]
+CopyFiles = BrowseWithFsViewer.Files.Inf
+AddReg    = BrowseWithFsViewer.AddReg
+
+[DefaultInstall]
+CopyFiles = BrowseWithFsViewer.Files.Inf
+AddReg    = BrowseWithFsViewer.AddReg
+
+[DefaultUnInstall]
+DelFiles  = BrowseWithFsViewer.Files.Inf
+DelReg    = BrowseWithFsViewer.DelReg
+
+[SourceDisksNames]
+55="Browse with FsViewer","",1
+
+[SourceDisksFiles]
+BrowseWithFsViewer.INF=55
+
+[DestinationDirs]
+BrowseWithFsViewer.Files.Inf = 17
+
+[BrowseWithFsViewer.Files.Inf]
+BrowseWithFsViewer.INF
+
+[BrowseWithFsViewer.AddReg]
+HKCU,%UDHERE%,DisplayName,,"%DisplayName%"
+HKCU,%UDHERE%,DisplayVersion,,"%DisplayVersion%"
+HKCU,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\BrowseWithFsViewer.inf"
+HKCU,Software\Classes\Directory\Shell\BrowseWithFsViewer,,,"%BrowseWithFsViewerAccel%"
+HKCU,Software\Classes\Directory\Shell\BrowseWithFsViewer\command,,,"%FSVIEWER% -d ""%1"""
+HKCU,Software\Classes\Directory\Background\Shell\BrowseWithFsViewer,,,"%BrowseWithFsViewerAccel%"
+HKCU,Software\Classes\Directory\Background\Shell\BrowseWithFsViewer\command,,,"%FSVIEWER% -d ""%V"""
+HKCU,Software\Classes\Drive\Shell\BrowseWithFsViewer,,,"%BrowseWithFsViewerAccel%"
+HKCU,Software\Classes\Drive\Shell\BrowseWithFsViewer\command,,,"%FSVIEWER% -d ""%1"""
+
+[BrowseWithFsViewer.DelReg]
+HKCU,%UDHERE%
+HKCU,Software\Classes\Directory\Shell\BrowseWithFsViewer
+
+[Strings]
+DisplayName="Browse with FsViewer (Uninstall only)"
+DisplayVersion="1"
+BrowseWithFsViewerAccel="Browse with Fs&Viewer"
+UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\BrowseWithFsViewer"
+FSVIEWER="FASTSTONE_VIEWER_BINARY"

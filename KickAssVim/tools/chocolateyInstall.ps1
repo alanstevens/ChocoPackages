@@ -1,6 +1,5 @@
 $toolsPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$parentPath = join-path $toolsPath '..'
-$contentPath = join-path $parentPath 'content'
+$contentPath = ($toolsPath | Split-Path | Join-Path -ChildPath "content")
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
 #install batch file in path

@@ -11,9 +11,9 @@
         <!--<iconUrl></iconUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
-        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        </description>
         <summary></summary>
-        <tags> chocolatey</tags>
+        <tags></tags>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
