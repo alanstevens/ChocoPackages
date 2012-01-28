@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>console-devel</id>
+        <version>2.00.147</version>
+        <title>Console devel</title>
+        <authors>Vivian De Smedt and Sergey Kozlov</authors>
+        <owners>H. Alan Stevens</owners>
+        <licenseUrl>http://sourceforge.net/directory/license:osi-approved-open-source/gnu-general-public-license-gpl/</licenseUrl>
+        <projectUrl>http://sourceforge.net/projects/console-devel/</projectUrl>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Console-devel/Console.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This is a development branch of Console by Marko Bozikovic (http://sourceforge.net/projects/console/). Console-devel adds a "Run Console" option to Explorer context menu, the ability to maintain a single instance of Console and the option to reuse open tabs to the core behavior of Console2.
+        </description>
+        <summary>This is a development branch of Console by Marko Bozikovic (http://sourceforge.net/projects/console/).</summary>
+        <tags>console shell</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
