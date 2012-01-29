@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>xnews</id>
+        <version>5.04.25</version>
+        <title>Xnews</title>
+        <authors>Luu Tran</authors>
+        <owners>H. Alan Stevens</owners>
+        <!-- <licenseUrl></licenseUrl>-->
+        <projectUrl>http://xnews.newsguy.com</projectUrl>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Xnews/Xnews.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Xnews is a free Usenet newsreader for Windows.
+        </description>
+        <summary>Xnews is a free Usenet newsreader for Windows.</summary>
+        <tags>usenet news</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
