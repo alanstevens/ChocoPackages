@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>gdoc-creator</id>
+        <version>2.5.1.01</version>
+        <title>gDoc Creator</title>
+        <authors>Global Graphics Software Ltd.</authors>
+        <owners>H. Alan Stevens</owners>
+        <!-- <licenseUrl></licenseUrl>-->
+        <projectUrl>http://www.globalgraphics.com/en/gdoc/gdoc-creator</projectUrl>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/gDocCreator/GDocCreator.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>gDoc Creator is a simple and free solution to create PDF or XPS documents. Convert from Word, Excel®, PowerPoint®, PostScript®, PDF and XPS.
+        </description>
+        <summary>gDoc Creator - convert Word, Excel and PowerPoint files to PDF, or PDF to Word</summary>
+        <tags>pdf word</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
