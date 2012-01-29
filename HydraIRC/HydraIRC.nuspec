@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>hydrairc</id>
+        <version>0.3.165.01</version>
+        <title>HydraIRC</title>
+        <authors>HydraIRC Developers</authors>
+        <owners>H. Alan Stevens</owners>
+        <licenseUrl>http://www.hydrairc.com/content/developers</licenseUrl>
+        <projectUrl>http://www.hydrairc.com/</projectUrl>
+        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/HydraIRC/HydraIRC.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>HydraIRC is an open-source IRC client with an attractive and easy to use interface. It supports DCC Chat and File transfers, Connecting to Multiple IRC Servers, Docking/Floating Windows, DLL Plugins, Channel Monitoring, Message Logs, Logging, Output Themes, Color Schemes, Buddy Groups, Auto-Connect, One-Click Favorites and more.
+        </description>
+        <summary>HydraIRC is an open-source IRC client with an attractive and easy to use interface.</summary>
+        <tags>irc</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
