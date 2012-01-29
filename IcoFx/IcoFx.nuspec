@@ -8,9 +8,9 @@
         <owners>H. Alan Stevens</owners>
         <summary>IcoFX is an all-in-one solution for icon creation, extraction and editing.</summary>
         <description>IcoFX is an all-in-one solution for icon creation, extraction and editing. With IcoFX you can extract icons from other files, including Windows Vista and Windows 7 files. You can easily work with multiple files using the batch processing capability of IcoFX.
-        | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+        </description>
         <projectUrl>http://filehippo.com/download_icofx/6890/</projectUrl>
-        <tags>icon editor chocolatey</tags>
+        <tags>icon editor</tags>
         <!-- <licenseUrl>Shareware</licenseUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/IcoFx/IcoFx.png</iconUrl>

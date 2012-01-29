@@ -6,6 +6,9 @@ $url64bit = ''
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
+$chocTempDir = Join-Path $env:TEMP "chocolatey"
+$tempDir = Join-Path $chocTempDir "$packageName"
+$file = Join-Path $tempDir "$($packageName)Install.zip"
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
