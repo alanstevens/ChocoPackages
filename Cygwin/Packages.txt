@@ -4,6 +4,6 @@ Database,Devel,Doc,Editors,Games, -FAILED
 
 Gnome,Graphics,Interpreters,Kde,Libs, -FAILED
 
-Mail,Math,Mingw,Net,Perl,Publishing,
+Mail,Math,Mingw,Net,Perl,Publishing, -FAILED
 
 Python,Science,Security,Shells,System,Text,Utils,Web,X11

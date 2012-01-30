@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>kickassconsole</id>
+        <version></version>
+        <title>Kick Ass Console</title>
+        <authors>H. Alan Stevens</authors>
+        <owners>H. Alan Stevens</owners>
+        <licenseUrl></licenseUrl>
+        <projectUrl></projectUrl>
+        <!--<iconUrl></iconUrl>-->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+        </description>
+        <summary></summary>
+        <tags></tags>
+        <dependencies>
+      <dependency id="console-devel" />
+    </dependencies>
+  </metadata>
+</package>
