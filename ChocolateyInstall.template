@@ -8,8 +8,8 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
 $unzipLocation = Join-Path $env:TEMP "chocolatey" | Join-Path "$packageName"
 $file = Join-Path $unzipLocation "$($packageName)Install.zip"
-$toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-$contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
