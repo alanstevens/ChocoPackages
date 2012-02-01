@@ -1,8 +1,8 @@
-$packageName = 'Console-devel'
+﻿$packageName = 'notepad2'
 $fileType = 'exe'
-$silentArgs = '/silent'
-$url = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b147a/Console%202.00b147a%20win32.exe'
-$url64bit = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b147a/Console%202.00b147a%20x64.exe'
+$silentArgs = '/S'
+$url = 'http://www.flos-freeware.ch/zip/Notepad2_4.2.25_x86.exe'
+$url64bit = 'http://www.flos-freeware.ch/zip/Notepad2_4.2.25_x64.exe'
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
@@ -10,15 +10,18 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 $binary = $packageName
 $exePath = "$binary\$binary.exe"
 
+# If the program installs somewhere other than "Program Files"
+# set the $programFiles variable accordingly
+$is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
+$programFiles = $env:programfiles
+if ($is64bit) {
+    if($url64bit){
+        $programFiles = $env:ProgramW6432}
+    else{
+        $programFiles = ${env:ProgramFiles(x86)}}
+}
+
 try {
-    $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-    $programFiles = $env:programfiles
-    if ($is64bit) {
-        if($url64bit){
-            $programFiles = $env:ProgramW6432}
-        else{
-            $programFiles = ${env:ProgramFiles(x86)}}
-    }
     $executable = join-path $env:programfiles $exePath
     $fsObject = New-Object -ComObject Scripting.FileSystemObject
     $executable = $fsObject.GetFile("$executable").ShortPath

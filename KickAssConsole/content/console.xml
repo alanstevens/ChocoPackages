@@ -55,7 +55,7 @@
             <!-- <color id="13" r="200" g="128" b="200"/>-->
             <!-- <color id="14" r="240" g="223" b="175"/>-->
             <!-- <color id="15" r="255" g="255" b="255"/>-->
-            <!-- -->
+            <!-- Blank -->
             <!-- <color id="0" r="" g="" b=""/>-->
             <!-- <color id="1" r="" g="" b=""/>-->
             <!-- <color id="2" r="" g="" b=""/>-->
@@ -156,7 +156,7 @@
             </background>
         </tab>
         <tab title="Git Bash" icon="CONTENT_DIR\git.ico" use_default_icon="0">
-            <console shell="%systemdrive%\KickAssRuby\Git\bin\sh.exe --login -i" init_dir=".\" run_as_user="0" user=""/>
+            <console shell="%ProgramFiles%\Git\bin\sh.exe --login -i" init_dir=".\" run_as_user="0" user=""/>
             <cursor style="0" r="255" g="255" b="255"/>
             <background type="0" r="0" g="0" b="0">
                 <image file="" relative="0" extend="0" position="0">

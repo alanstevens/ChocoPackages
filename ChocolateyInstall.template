@@ -11,19 +11,42 @@ $file = Join-Path $unzipLocation "$($packageName)Install.zip"
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
+# Add a symlink/batch file to the path
+$binary = $packageName
+$exePath = "$binary\$binary.exe"
+
+# If the program installs somewhere other than "Program Files"
+# set the $programFiles variable accordingly
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-
 $programFiles = $env:programfiles
-if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
+if ($is64bit) {
+    if($url64bit){
+        $programFiles = $env:ProgramW6432}
+    else{
+        $programFiles = ${env:ProgramFiles(x86)}}
+}
 
-$executable = join-path $programfiles '.exe'
+try {
+    $executable = join-path $env:programfiles $exePath
+    $fsObject = New-Object -ComObject Scripting.FileSystemObject
+    $executable = $fsObject.GetFile("$executable").ShortPath
 
-$fsObject = New-Object -ComObject Scripting.FileSystemObject
-$executable = $fsObject.GetFile("$executable").ShortPath
+    $symLinkName = Join-Path $nugetExePath "$binary.exe"
+    $batchFileName = Join-Path $nugetExePath "$binary.bat"
 
-#add batch file
-$batchFileName = Join-Path $nugetExePath "$packageName.bat"
+    # delete the batch file if it exists.
+    if(Test-Path $batchFileName){
+      Remove-Item "$batchFileName"}
 
-"@echo off
-SET DIR=%~dp0%
-start $executable %*" | Out-File $batchFileName -encoding ASCII
+    if( (gwmi win32_operatingSystem).version -ge 6){
+      & $env:comspec /c mklink /H $symLinkName $executable}
+    else{
+    "@echo off
+    SET DIR=%~dp0%
+    start $executable %*" | Out-File $batchFileName -encoding ASCII
+        }
+    Write-ChocolateySuccess $packageName
+} catch {
+  Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+  throw
+}
