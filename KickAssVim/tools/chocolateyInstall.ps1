@@ -13,8 +13,7 @@ Get-Content $cmdFile | Foreach-Object{$_ -replace 'VIM_DIRECTORY', "$vimDir"} | 
 move-item 'TempFile.txt' $(join-path $nugetBin 'gvim.cmd') -Force
 
 "@echo off
-SET DIR=%~dp0%
-""$(join-path $vimDir 'vim.exe')"" %*" | Out-File $(Join-Path $nugetBin "vim.cmd") -encoding ASCII
+$(join-path $vimDir 'vim.exe') %*" | Out-File $(Join-Path $nugetBin 'vim.cmd') -encoding ASCII
 
 #add right click menu
 $infFile = join-path $contentPath 'EditWithVim.inf'

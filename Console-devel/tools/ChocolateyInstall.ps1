@@ -9,8 +9,7 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 # Add a symlink/batch file to the path
 $binary = 'console'
 $exePath = "$binary\$binary.exe"
-# You can set this value to $true if the executable does not depend on external dlls
-$useSymLinks = $false
+$useSymLinks = $false # You can set this value to $true if the executable does not depend on external dlls
 
 # If the program installs somewhere other than "Program Files"
 # set the $programFiles variable accordingly
@@ -32,12 +31,10 @@ try {
     $batchFileName = Join-Path $nugetExePath "$binary.bat"
 
     # delete the batch file if it exists.
-    if(Test-Path $batchFileName){
-      Remove-Item "$batchFileName"
-      }
+    if(Test-Path $batchFileName){Remove-Item "$batchFileName"}
 
     if($useSymLinks -and ((gwmi win32_operatingSystem).version -ge 6)){
-        Start-ChocolateyProcessAsAdmin "/c mklink /H $symLinkName $executable" $env:comspec
+        Start-ChocolateyProcessAsAdmin "if(Test-Path $symLinkName){Remove-Item $symLinkName}; $env:comspec /c mklink /H $symLinkName $executable"
       }
     else{
     "@echo off

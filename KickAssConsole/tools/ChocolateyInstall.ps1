@@ -1,29 +1,20 @@
-$packageName = ''
-$fileType = ''
-$silentArgs = ''
-$url = ''
-$url64bit = ''
-
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
-
-$unzipLocation = Join-Path $env:TEMP "chocolatey" | Join-Path "$packageName"
-$file = Join-Path $unzipLocation "$($packageName)Install.zip"
 $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
-
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
+# program files path for git bash
 $programFiles = $env:programfiles
 if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
-
-$executable = join-path $programfiles '.exe'
-
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
-$executable = $fsObject.GetFile("$executable").ShortPath
+$programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 
-#add batch file
-$batchFileName = Join-Path $nugetExePath "$packageName.bat"
+$configTarget = join-path $env:appdata 'console\console.xml'
 
-"@echo off
-SET DIR=%~dp0%
-start $executable %*" | Out-File $batchFileName -encoding ASCII
+# rename the config file if it exists.
+if(Test-Path $configTarget){
+  move-item "$configTarget" "$configTarget.sav" -force }
+
+#add custom config file
+$configFile = join-path $contentDir 'console.xml'
+
+Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $configTarget

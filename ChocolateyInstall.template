@@ -11,11 +11,12 @@ $file = Join-Path $unzipLocation "$($packageName)Install.zip"
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
+#Install-ChocolateyZipPackage $packageName $url $unzipLocation
+
 # Add a symlink/batch file to the path
 $binary = $packageName
 $exePath = "$binary\$binary.exe"
-# You can set this value to $true if the executable does not depend on external dlls
-$useSymLinks = $false
+$useSymLinks = $false # You can set this value to $true if the executable does not depend on external dlls
 
 # If the program installs somewhere other than "Program Files"
 # set the $programFiles variable accordingly
@@ -25,7 +26,8 @@ if ($is64bit) {
     if($url64bit){
         $programFiles = $env:ProgramW6432}
     else{
-        $programFiles = ${env:ProgramFiles(x86)}}
+        $programFiles = ${env:ProgramFiles(x86)}
+        }
 }
 
 try {
@@ -41,7 +43,7 @@ try {
       Remove-Item "$batchFileName"}
 
     if($useSymLinks -and ((gwmi win32_operatingSystem).version -ge 6)){
-        Start-ChocolateyProcessAsAdmin "/c mklink /H $symLinkName $executable" $env:comspec
+        Start-ChocolateyProcessAsAdmin "if(Test-Path $symLinkName){Remove-Item $symLinkName}; $env:comspec /c mklink /H $symLinkName $executable"
       }
     else{
     "@echo off
