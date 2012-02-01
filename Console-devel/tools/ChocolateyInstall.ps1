@@ -7,36 +7,43 @@ $url64bit = 'http://sourceforge.net/projects/console-devel/files/console-release
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
 # Add a symlink/batch file to the path
-$binary = $packageName
+$binary = 'console'
 $exePath = "$binary\$binary.exe"
+# You can set this value to $true if the executable does not depend on external dlls
+$useSymLinks = $false
+
+# If the program installs somewhere other than "Program Files"
+# set the $programFiles variable accordingly
+$is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
+$programFiles = $env:programfiles
+if ($is64bit) {
+    if($url64bit){
+        $programFiles = $env:ProgramW6432}
+    else{
+        $programFiles = ${env:ProgramFiles(x86)}}
+}
 
 try {
-    $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-    $programFiles = $env:programfiles
-    if ($is64bit) {
-        if($url64bit){
-            $programFiles = $env:ProgramW6432}
-        else{
-            $programFiles = ${env:ProgramFiles(x86)}}
-    }
-    $executable = join-path $env:programfiles $exePath
     $fsObject = New-Object -ComObject Scripting.FileSystemObject
-    $executable = $fsObject.GetFile("$executable").ShortPath
 
+    $executable = join-path $programFiles $exePath
+    $executable = $fsObject.GetFile("$executable").ShortPath
     $symLinkName = Join-Path $nugetExePath "$binary.exe"
     $batchFileName = Join-Path $nugetExePath "$binary.bat"
 
     # delete the batch file if it exists.
     if(Test-Path $batchFileName){
-      Remove-Item "$batchFileName"}
+      Remove-Item "$batchFileName"
+      }
 
-    if( (gwmi win32_operatingSystem).version -ge 6){
-      & $env:comspec /c mklink /H $symLinkName $executable}
+    if($useSymLinks -and ((gwmi win32_operatingSystem).version -ge 6)){
+        Start-ChocolateyProcessAsAdmin "/c mklink /H $symLinkName $executable" $env:comspec
+      }
     else{
     "@echo off
-    SET DIR=%~dp0%
     start $executable %*" | Out-File $batchFileName -encoding ASCII
         }
+
     Write-ChocolateySuccess $packageName
 } catch {
   Write-ChocolateyFailure $packageName "$($_.Exception.Message)"

@@ -9,6 +9,8 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 # Add a symlink/batch file to the path
 $binary = $packageName
 $exePath = "$binary\$binary.exe"
+# You can set this value to $true if the executable does not depend on external dlls
+$useSymLinks = $true
 
 # If the program installs somewhere other than "Program Files"
 # set the $programFiles variable accordingly
@@ -22,7 +24,7 @@ if ($is64bit) {
 }
 
 try {
-    $executable = join-path $env:programfiles $exePath
+    $executable = join-path $programfiles $exePath
     $fsObject = New-Object -ComObject Scripting.FileSystemObject
     $executable = $fsObject.GetFile("$executable").ShortPath
 
@@ -30,14 +32,13 @@ try {
     $batchFileName = Join-Path $nugetExePath "$binary.bat"
 
     # delete the batch file if it exists.
-    if(Test-Path $batchFileName){
-      Remove-Item "$batchFileName"}
+    if(Test-Path $batchFileName){Remove-Item "$batchFileName"}
 
-    if( (gwmi win32_operatingSystem).version -ge 6){
-      & $env:comspec /c mklink /H $symLinkName $executable}
+    if($useSymLinks -and ((gwmi win32_operatingSystem).version -ge 6)){
+        Start-ChocolateyProcessAsAdmin "if(Test-Path $symLinkName){Remove-Item $symLinkName}; $env:comspec /c mklink /H $symLinkName $executable"
+      }
     else{
     "@echo off
-    SET DIR=%~dp0%
     start $executable %*" | Out-File $batchFileName -encoding ASCII
         }
     Write-ChocolateySuccess $packageName

@@ -14,6 +14,8 @@ $contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 # Add a symlink/batch file to the path
 $binary = $packageName
 $exePath = "$binary\$binary.exe"
+# You can set this value to $true if the executable does not depend on external dlls
+$useSymLinks = $false
 
 # If the program installs somewhere other than "Program Files"
 # set the $programFiles variable accordingly
@@ -27,7 +29,7 @@ if ($is64bit) {
 }
 
 try {
-    $executable = join-path $env:programfiles $exePath
+    $executable = join-path $programFiles $exePath
     $fsObject = New-Object -ComObject Scripting.FileSystemObject
     $executable = $fsObject.GetFile("$executable").ShortPath
 
@@ -38,11 +40,11 @@ try {
     if(Test-Path $batchFileName){
       Remove-Item "$batchFileName"}
 
-    if( (gwmi win32_operatingSystem).version -ge 6){
-      & $env:comspec /c mklink /H $symLinkName $executable}
+    if($useSymLinks -and ((gwmi win32_operatingSystem).version -ge 6)){
+        Start-ChocolateyProcessAsAdmin "/c mklink /H $symLinkName $executable" $env:comspec
+      }
     else{
     "@echo off
-    SET DIR=%~dp0%
     start $executable %*" | Out-File $batchFileName -encoding ASCII
         }
     Write-ChocolateySuccess $packageName
