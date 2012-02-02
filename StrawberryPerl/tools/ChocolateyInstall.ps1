@@ -10,15 +10,3 @@ $url = 'http://strawberry-perl.googlecode.com/files/strawberry-perl-5.12.3.0.msi
 $url64bit = 'http://strawberry-perl.googlecode.com/files/strawberry-perl-5.12.3.0-64bit.msi'
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
-
-$toolsPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$parentPath = join-path $toolsPath '..'
-$contentPath = join-path $parentPath 'content'
-$infFile = join-path $contentPath 'PerlScriptIcon.inf'
-
-# Update the inf file with the content path
-Get-Content $infFile | Foreach-Object{$_ -replace "CONTENT_PATH", "$contentPath"} | Set-Content 'TempFile.txt'
-move-item 'TempFile.txt' $infFile -Force
-
-# install the inf file
-& rundll32 syssetup,SetupInfObjectInstallAction DefaultInstall 128 $infFile
