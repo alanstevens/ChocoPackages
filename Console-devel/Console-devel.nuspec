@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>console-devel</id>
-        <version>2.00.147.01</version>
+        <version>2.00.147.02</version>
         <title>Console devel</title>
         <authors>Vivian De Smedt and Sergey Kozlov</authors>
         <owners>H. Alan Stevens</owners>
