@@ -18,5 +18,4 @@ $registryKey = 'HKCU:\Software\Microsoft\Command Processor'
 $keyProperty = 'AutoRun'
 $currentValue = (Get-ItemProperty $registryKey).$keyProperty
 $newValue = "$(join-path $targetDir 'ansicon.exe') -p"
-$doskeyValue = "$(join-path $env:userprofile 'aliases.bat')"
 Set-Item -Path $registryKey -Name $keyProperty -Value $newValue -Type string

@@ -19,13 +19,13 @@ if($currentValue){
   if($currentValue.Contains('&&'){
 #split on '&&'
     $currentValues = currentValue.Split('&&')
-arrColors = Array("blue", "red", "green", "yellow", "white", "pink", "orange", "turquoise")
 
-For Each strColor in arrColors
-    If strColor = "black" Then
-        blnFound = True
-    End If
-Next
+
+  For Each $vaue in $cuttentValues
+      if($currentValue.ToLower().Contains($aliasFile.ToLower()){
+          blnFound = True
+      End If
+  Next
   }
   else{
     if($currentValue.ToLower().Contains($aliasFile.ToLower()){
