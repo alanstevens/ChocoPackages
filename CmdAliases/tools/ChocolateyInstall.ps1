@@ -1,3 +1,8 @@
+
+function Remove-PropertyValueLike{
+param([string] $currentValue, [string] $likeValue)
+}
+
 $packageName = 'CmdAliases'
 
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
@@ -20,8 +25,7 @@ if($currentValue){
 #split on '&&'
     $currentValues = currentValue.Split('&&')
 
-
-  For Each $vaue in $cuttentValues
+  For Each $value in $currentValues
       if($currentValue.ToLower().Contains($aliasFile.ToLower()){
           blnFound = True
       End If
