@@ -1,21 +1,54 @@
+
 $packageName = 'ansicon'
 $url = 'https://github.com/downloads/adoxa/ansicon/ansi150.zip'
-
-$unzipLocation = Join-Path $env:TEMP "chocolatey" | Join-Path "$packageName"
-
-Install-ChocolateyZipPackage $packageName $url $unzipLocation
-
+$chocTempDir = Join-Path $env:TEMP "chocolatey"
+$unzipLocation = Join-Path $chocTempDir "$packageName"
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-
 $sourceDir = Join-Path $unzipLocation 'x86'
 if($is64bit){$sourceDir = Join-Path $unzipLocation 'x64'}
-
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $targetDir = $(join-path $toolsDir $packageName)
-move-item $sourceDir $targetDir
+
+if(!(test-path $targetDir)){
+  Install-ChocolateyZipPackage $packageName $url $unzipLocation
+  # If ansicon is in use in the current console, this will fail :-(
+  move-item $sourceDir $targetDir -force
+}
+
+$ansicon = 'ansicon.exe'
+$targetFile = "$(join-path $targetDir $ansicon) -p"
 
 $registryKey = 'HKCU:\Software\Microsoft\Command Processor'
 $keyProperty = 'AutoRun'
 $currentValue = (Get-ItemProperty $registryKey).$keyProperty
-$newValue = "$(join-path $targetDir 'ansicon.exe') -p"
-Set-Item -Path $registryKey -Name $keyProperty -Value $newValue -Type string
+$newValue = ''
+
+write-host 'Adding ansicon to the cmd.exe autorun registry key'
+
+#check for empty value
+if($currentValue){
+  #check for multiple values
+  if($currentValue.Contains('&&')){
+    #split on '&&'
+    $currentValues = $currentValue.Split('&&')
+
+    #check each value for $aliasFile
+    ForEach ($value in $currentValues){
+      if(!$value.ToLower().Contains($ansicon.ToLower()) -and ![string]::IsNullOrEmpty($value)){
+        $newValue += "$value`&`&"
+      }
+    }
+    $newValue += $targetFile
+  }
+  else{
+    if($currentValue.ToLower().Contains($ansicon.ToLower())){
+      $newValue = $targetFile
+    }else{
+      $newValue = "$currentValue`&`&$targetFile"
+    }
+  }
+}else{
+  $newValue = $targetFile
+}
+
+Set-ItemProperty -Path $registryKey -Name $keyProperty -Value $newValue -Type string

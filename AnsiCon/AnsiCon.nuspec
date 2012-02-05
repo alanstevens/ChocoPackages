@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id></id>
-        <version></version>
-        <title></title>
-        <authors></authors>
+        <id>ansicon</id>
+        <version>1.5.0.1</version>
+        <title>ANSICON</title>
+        <authors>Jason Hood</authors>
         <owners>H. Alan Stevens</owners>
-        <licenseUrl></licenseUrl>
-        <projectUrl></projectUrl>
+        <!--<licenseUrl></licenseUrl>-->
+        <projectUrl>https://github.com/adoxa/ansicon</projectUrl>
         <!--<iconUrl></iconUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>
+        <description>ANSICON provides ANSI escape sequences for Windows console programs.  It provides much the same functionality as `ANSI.SYS' does for MS-DOS.
         </description>
-        <summary></summary>
-        <tags></tags>
+        <summary>ANSICON provides ANSI escape sequences for Windows console programs</summary>
+        <tags>console color ansi codes</tags>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
