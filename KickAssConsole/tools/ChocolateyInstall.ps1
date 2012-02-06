@@ -14,7 +14,11 @@ if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 $programFiles64 = $programFiles
-if ($is64bit) {$programFiles64 = $env:ProgramW6432}
+$tccFolder='TCCLE13'
+if ($is64bit) {
+  $programFiles64 = $env:ProgramW6432
+  $tccFolder='TCCLE13x64'
+  }
 
 $targetFile = join-path $env:appdata 'console\console.xml'
 
@@ -29,7 +33,7 @@ if(Test-Path $targetFile){
 
 #add custom config file
 $configFile = join-path $contentDir 'console.xml'
-Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $targetFile
+Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "TCCLE13", "$tccFolder" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $targetFile
 
 # Add custom aliases
 $aliasFile = 'aliases.bat'
