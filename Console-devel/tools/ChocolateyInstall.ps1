@@ -1,3 +1,4 @@
+
 $packageName = 'Console-devel'
 $fileType = 'exe'
 $silentArgs = '/silent'

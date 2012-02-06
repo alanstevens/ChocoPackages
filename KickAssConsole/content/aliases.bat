@@ -48,6 +48,11 @@ n=notepad $*
 ;= Fast access to Explorer
 x=explorer .
 
+;= Ruby/Rails
+rvm=pik
+~=%userprofile%
+r=rails
+
 ;= :end
 ;= rem ******************************************************************
 ;= rem * EOF - Don't remove the following line.  It clears out the ';'
