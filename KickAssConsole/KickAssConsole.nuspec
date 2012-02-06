@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>kickassconsole</id>
-        <version>0.1.1</version>
-        <title>Kick Ass Console</title>
-        <authors>H. Alan Stevens</authors>
-        <owners>H. Alan Stevens</owners>
-        <!-- <licenseUrl></licenseUrl>-->
-        <!-- <projectUrl></projectUrl>-->
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KickAssConsole/KickAssConsole.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>An opinionated configuration of console-devel using the ir_black color scheme
-        </description>
-        <summary>An opinionated configuration of console-devel using the ir_black color scheme</summary>
-        <tags>kick ass console</tags>
-        <dependencies>
-            <dependency id="console-devel" />
-            <dependency id="msysgit" />
-            <!-- <dependency id="cygwin" />-->
-        </dependencies>
-    </metadata>
+  <metadata>
+    <id>kickassconsole</id>
+    <version>0.1.2</version>
+    <title>Kick Ass Console</title>
+    <authors>H. Alan Stevens</authors>
+    <owners>H. Alan Stevens</owners>
+    <!-- <licenseUrl></licenseUrl>-->
+    <!-- <projectUrl></projectUrl>-->
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KickAssConsole/KickAssConsole.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An opinionated configuration of console-devel using the ir_black color scheme
+    </description>
+    <summary>An opinionated configuration of console-devel using the ir_black color scheme</summary>
+    <tags>kick ass console</tags>
+    <dependencies>
+      <dependency id="console-devel" />
+      <dependency id="msysgit" />
+      <dependency id="tcc" />
+      <!-- <dependency id="cygwin" />-->
+    </dependencies>
+  </metadata>
 </package>
