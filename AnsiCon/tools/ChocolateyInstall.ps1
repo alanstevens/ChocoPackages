@@ -16,14 +16,14 @@ if(!(test-path $targetDir)){
 }
 
 $ansicon = 'ansicon.exe'
-$targetFile = "$(join-path $targetDir $ansicon) -p"
+$targetFile = "(if %ANSICON_VER%==^%ANSICON_VER^% `"$(join-path $targetDir $ansicon)`" -p)"
 
 $registryKey = 'HKCU:\Software\Microsoft\Command Processor'
 $keyProperty = 'AutoRun'
 $currentValue = (Get-ItemProperty $registryKey).$keyProperty
 $newValue = ''
 
-write-host 'Adding ansicon to the cmd.exe autorun registry key'
+write-host 'Adding ansicon to the command processor autorun registry key'
 
 #check for empty value
 if($currentValue){
