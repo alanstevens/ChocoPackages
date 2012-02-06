@@ -12,6 +12,10 @@ $file = Join-Path $unzipLocation "$($packageName)Install.zip"
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 
+$binRoot = "$env:systemdrive\"
+### Using an environment variable to to define the bin root until we implement YAML configuration ###
+if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+
 #Install-ChocolateyZipPackage $packageName $url $unzipLocation
 
 # Add a symlink/batch file to the path
