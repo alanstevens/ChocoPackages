@@ -1,8 +1,4 @@
 
-function Remove-PropertyValueLike{
-param([string] $currentValue, [string] $likeValue)
-}
-
 $packageName = 'CmdAliases'
 
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
@@ -11,34 +7,48 @@ $aliasFile = 'aliases.bat'
 $sourceFile = "$(join-path $contentDir $aliasFile)"
 $targetFile = "$(join-path $env:userprofile $aliasFile)"
 
+#if file exists, create backup with timestamp in name
+if(Test-Path $targetFile){
+  $date = (Get-Date).toString('dd-MM-yyyy_hh_mm_ss')
+  $baseName = [system.io.path]::GetFilenameWithoutExtension($targetFile)
+  $extension = [System.IO.Path]::GetExtension($targetFile)
+  $backupFile = $(join-path $env:userprofile "$baseName`_$date$extension")
+  write-host "Backing up $targetFile as $backupFile."
+  move-item $targetFile $backupFile -force }
+
 copy-item $sourceFile $targetFile
 
 $registryKey = 'HKCU:\Software\Microsoft\Command Processor'
 $keyProperty = 'AutoRun'
 $currentValue = (Get-ItemProperty $registryKey).$keyProperty
-$ansiconValue = "$(join-path $targetDir 'ansicon.exe') -p"
 $newValue = ''
+
 #check for empty value
 if($currentValue){
-#check for '&&'
-  if($currentValue.Contains('&&'){
-#split on '&&'
-    $currentValues = currentValue.Split('&&')
+  #check for multiple values
+  if($currentValue.Contains('&&')){
+    #split on '&&'
+    $currentValues = $currentValue.Split('&&')
 
-  For Each $value in $currentValues
-      if($currentValue.ToLower().Contains($aliasFile.ToLower()){
-          blnFound = True
-      End If
-  Next
+    #check each value for $aliasFile
+    ForEach ($value in $currentValues){
+      if(!$value.ToLower().Contains($aliasFile.ToLower()) -and ![string]::IsNullOrEmpty($value)){
+        $newValue += "$value`&`&"
+      }
+    }
+    $newValue += $targetFile
   }
   else{
-    if($currentValue.ToLower().Contains($aliasFile.ToLower()){
+    if($currentValue.ToLower().Contains($aliasFile.ToLower())){
+      $newValue = $targetFile
     }else{
-      $newValue = "$currentValue&&$ansiconValue"
+      $newValue = "$currentValue`&`&$targetFile"
     }
   }
-#check each value for $aliasFile
-#join values with '&&'
+}else{
+  $newValue = $targetFile
 }
 
-Set-Item -Path $registryKey -Name $keyProperty -Value $newValue -Type string
+Set-ItemProperty -Path $registryKey -Name $keyProperty -Value $newValue -Type string
+
+write-host "** Review and edit $targetFile to customize the macros. **"

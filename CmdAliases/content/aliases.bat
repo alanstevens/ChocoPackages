@@ -2,7 +2,7 @@
 ;= rem Call DOSKEY and use this file as the macrofile
 ;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
 ;= rem In batch mode, jump to the end of the file
-;= goto end
+;= goto :end
 ;= rem ******************************************************************
 ;= rem *   Filename: aliases.bat
 ;= rem *     Source: http://ben.versionzero.org/wiki/Doskey_Macros
@@ -24,7 +24,7 @@
 h=doskey /history
 
 ;= File listing enhancements
-ls=dir /x $*
+:=ls=dir /x $*
 l=dir /x $*
 ll=dir /w $*
 la=dir /x /a $*
@@ -34,11 +34,11 @@ up=cd ..
 pd=pushd
 
 ;= Copy and move macros
-cp=copy
-mv=move
+;=cp=copy
+:=mv=move
 
 ;= Delete macros
-rm=del /p $*
+;=rm=del /p $*
 rmf=del /q $*
 rmtmp=del /q *~ *# 2>nul
 
@@ -46,12 +46,12 @@ rmtmp=del /q *~ *# 2>nul
 n=notepad $*
 
 ;= Fast access to Explorer
-c=explorer .
+x=explorer .
 
 ;= :end
 ;= rem ******************************************************************
 ;= rem * EOF - Don't remove the following line.  It clears out the ';'
-;= rem * macro. Were using it because there is no support for comments
+;= rem * macro. We're using it because there is no support for comments
 ;= rem * in a DOSKEY macro file.
 ;= rem ******************************************************************
 ;=

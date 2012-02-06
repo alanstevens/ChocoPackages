@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id></id>
-        <version></version>
-        <title></title>
-        <authors></authors>
+        <id>cmdaliases</id>
+        <version>1.0.0.1</version>
+        <title>CmdAliases</title>
+        <authors>Ben Burnett</authors>
         <owners>H. Alan Stevens</owners>
-        <licenseUrl></licenseUrl>
-        <projectUrl></projectUrl>
+        <!--<licenseUrl></licenseUrl>-->
+        <projectUrl>http://ben.versionzero.org/wiki/Doskey_Macros</projectUrl>
         <!--<iconUrl></iconUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>
+        <description>This package installs a batch file in command proccessor autorun which uses DOSKey to implement support for command macros, a simple text-substitution facility that operate like command line aliases in other environments. Review and edit %userprofile%\aliases.bat to customize the macros.
         </description>
-        <summary></summary>
-        <tags></tags>
+        <summary>Installs command macros which operate like command line aliases in other environments.</summary>
+        <tags>doskey console aliases</tags>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
