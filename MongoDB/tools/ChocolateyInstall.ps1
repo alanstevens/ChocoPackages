@@ -28,14 +28,15 @@ if(!$(test-path $dataDir)){mkdir $dataDir}
 $logsDir = $(join-path $mongoDir 'logs')
 if(!$(test-path $logsDir)){mkdir $logsDir}
 
-$batchFileName = Join-Path $nugetExePath 'mongo.bat'
+$binDir = join-path $env:chocolateyinstall 'bin'
+$batchFileName = Join-Path $binDir 'mongo.bat'
 $executable = join-path $mongoDir 'bin\mongo.exe'
 "@echo off
 $executable %*" | Out-File $batchFileName -encoding ASCII
 
-$batchFileName = Join-Path $nugetExePath 'MongoRotateLogs.bat'
+$batchFileName = Join-Path $binDir 'MongoRotateLogs.bat'
 "@echo off
 $executable --eval `'db.runCommand(`"logRotate`")`' mongohost:27017/admin" | Out-File $batchFileName -encoding ASCII
 
 # Install and start mongodb as a Windows service
-Start-ChocolateyProcessAsAdmin "& $mongod --quiet --bind_ip 127.0.0.1 --logpath $mongoDir\logs\MongoDB.log --logappend --dbpath $dataDir --directoryperdb --reinstall; net start `"MongoDB`""
+Start-ChocolateyProcessAsAdmin "& $mongod --quiet --bind_ip 127.0.0.1 --logpath $(join-path $logsDir 'MongoDB.log') --logappend --dbpath $dataDir --directoryperdb --reinstall; net start `"MongoDB`""

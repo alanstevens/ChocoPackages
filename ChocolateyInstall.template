@@ -19,6 +19,7 @@ if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $en
 #Install-ChocolateyZipPackage $packageName $url $unzipLocation
 
 # Add a symlink/batch file to the path
+$binDir = join-path $env:chocolateyinstall 'bin'
 $binary = $packageName
 $exePath = "$binary\$binary.exe"
 $useSymLinks = $false # You can set this value to $true if the executable does not depend on external dlls
@@ -40,8 +41,8 @@ try {
     $fsObject = New-Object -ComObject Scripting.FileSystemObject
     $executable = $fsObject.GetFile("$executable").ShortPath
 
-    $symLinkName = Join-Path $nugetExePath "$binary.exe"
-    $batchFileName = Join-Path $nugetExePath "$binary.bat"
+    $symLinkName = Join-Path $binDir "$binary.exe"
+    $batchFileName = Join-Path $binDir "$binary.bat"
 
     # delete the batch file if it exists.
     if(Test-Path $batchFileName){
