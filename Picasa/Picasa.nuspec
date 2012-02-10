@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>picasa</id>
+        <version>3.9.0.1</version>
+        <title>Picasa</title>
+        <authors>Google</authors>
+        <owners>H. Alan Stevens</owners>
+        <!-- <licenseUrl></licenseUrl>-->
+        <projectUrl>http://picasa.google.com/</projectUrl>
+        <iconUrl>http://screenshots.en.sftcdn.net/en/scrn/23000/23941/picasa-30.jpg</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Picasa is Google's free desktop photo management application. Picasa makes it really simple to take photos from your desktop and publish them online for others to see.
+        </description>
+        <summary>Picasa is Google's free desktop photo management application.</summary>
+        <tags>picasa web albums photo picture</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
