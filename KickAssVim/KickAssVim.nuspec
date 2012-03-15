@@ -3,7 +3,7 @@
     <metadata>
         <id>KickAssVim</id>
         <title>Kick Ass Vim</title>
-        <version>7.3.0.06</version>
+        <version>7.3.0.07</version>
         <authors>H. Alan Stevens</authors>
         <owners>H. Alan Stevens</owners>
         <summary>Enhancements to Vim on Windows.</summary>
@@ -16,6 +16,7 @@
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KickAssVim/KickAssVim.png</iconUrl>
         <dependencies>
             <dependency id="vim" version="[7.3,]" />
+            <dependency id="ctags" />
         </dependencies>
     </metadata>
 </package>
