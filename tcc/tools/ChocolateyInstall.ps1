@@ -1,6 +1,6 @@
 $packageName = 'tcc'
 $fileType = 'exe'
-$silentArgs = '/Q'
+$silentArgs = '/qn'
 $url = 'http://jpsoft.com/downloads/v13/tccle.exe'
 $url64bit = 'http://jpsoft.com/downloads/v13/tcclex64.exe'
 
