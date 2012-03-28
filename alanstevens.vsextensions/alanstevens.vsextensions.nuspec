@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>alanstevens.vsextensions</id>
-        <version>1.01</version>
+        <version>1.02</version>
         <title>Alan Stevens' preferred Visual Studio extensions</title>
         <authors>H. Alan Stevens</authors>
         <owners>H. Alan Stevens</owners>
