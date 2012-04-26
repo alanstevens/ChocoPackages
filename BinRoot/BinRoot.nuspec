@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>binroot</id>
+        <version>0.01</version>
+        <title>Bin Root</title>
+        <authors>H. Alan Stevens</authors>
+        <owners>H. Alan Stevens</owners>
+        <!--<iconUrl></iconUrl>-->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Set's the chocolatey_bin_root environment variable to a default value of 'bin' if not already set. This allows packages such as Ruby, Python etc. to install in \bin instead of the system root.
+        </description>
+        <summary>Sets the chocolatey_bin_root default value.</summary>
+        <tags>path</tags>
+        <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>

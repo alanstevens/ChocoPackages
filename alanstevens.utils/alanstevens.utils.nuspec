@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils</id>
     <title>Alan Stevens' Windows Utilities</title>
-    <version>1.06</version>
+    <version>1.07</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -11,12 +11,9 @@
     <description>These are the utilities I install on a fresh Windows dev machine. I recommend you set a user environment variable of "chocolatey_bin_root" with a value of "bin" or "tools" etc. This prevents packages like Ruby from installing in the root of C:. If possible, disable UAC before installing this package so that it can run unattended. Otherwise, you will have to approve each application's install. </description>
     <tags>utilities tools</tags>
     <dependencies>
-      <dependency id='evernote' />
-      <dependency id='googlechrome' />
-      <dependency id='dropbox' />
+      <dependency id='binroot' />
       <dependency id='curl' />
       <dependency id='wget' />
-      <!-- dependency id='ruby' version="(1.8.7,1.9)" / -->
       <dependency id='ruby' version="(1.9.2,1.9.3)" />
       <dependency id='ruby.devkit' />
       <dependency id='pik' />
@@ -51,6 +48,9 @@
       <dependency id='icofx' />
       <dependency id='fsviewer' />
       <dependency id='pdfcreator' />
+      <dependency id='evernote' />
+      <dependency id='googlechrome' />
+      <dependency id='dropbox' />
       <dependency id='gnuwin' />
     </dependencies>
   </metadata>
