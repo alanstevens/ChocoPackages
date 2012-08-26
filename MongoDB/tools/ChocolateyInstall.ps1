@@ -1,6 +1,6 @@
 
 $packageName = 'MongoDB'
-$mongoVersion = '2.0.2'
+$mongoVersion = '2.0.7'
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 $fileName = "mongodb-win32-i386-$mongoVersion"
 if ($is64bit) {$fileName = "mongodb-win32-x86`_64-$mongoVersion"}
