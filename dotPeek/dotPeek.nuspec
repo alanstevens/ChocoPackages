@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>dotPeek</id>
-        <version>1.0.0.7001</version>
+        <version>1.0.0.8644</version>
         <title>dotPeek</title>
         <authors>JetBrains</authors>
         <owners>H. Alan Stevens</owners>
