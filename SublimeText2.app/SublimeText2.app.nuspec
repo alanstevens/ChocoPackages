@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SublimeText2.app</id>
+    <title>Sublime Text 2</title>
+    <version>2.0.1.2217</version>
+    <authors>Jon Skinner</authors>
+    <owners>Jon Galloway,Alan Stevens,Ethan J Brown</owners>
+    <summary>Sublime Text 2 is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.  Includes Package Control.</summary>
+    <description>Sublime Text 2 is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.
+    This brings the Sublime Text full installation version to your system, which has a built-in auto-update mechanism.  Furthermore, Sublime Package Control is included.</description>
+    <releaseNotes>Version 2.0.1
+    Release Date: 14 July 2012
+    Keyboard input while dragging a selection will cancel the drag
+    Improved backspace behavior when use_tab_stops and translate_tabs_to_spaces are true
+    Improved shift+drag behavior
+    Improved double click drag select behavior
+    About Window shows the license key details
+    Fixed a Goto Anything issue where pressing backspace could scroll the overlay incorrectly
+    Fixed a crash triggered by double clicking in the Goto Anything overlay
+    Fixed incorrect window position when dragging a tab in some scenarios
+    Added missing toggle_preserve_case command
+    word_wrap setting accepts "true" and "false" as synonyms to true and false
+    OSX: Fixed System Preferences menu not working
+    Linux: Added support for mice with more than 5 buttons
+    Linux: Fixed an occasional graphical glitch when running under Unity
+
+    Version 2.0
+    Release Date: 26 June 2012
+    See the blog post for a summary.
+    OSX: Added Retina display support
+    Added "Quick Skip Next", on Command+K,Command+D / Ctrl+K,Ctrl+D
+    Added text drag and drop
+    Reloading a file maintains the selection
+    OSX: Find uses the system find pasteboard
+    OSX: Added support for the ODB Editor Suite
+    Theme: Added support for the highlight_modified_tabs setting
+    Added setting show_full_path, to control if the full path is shown in the window title
+    Added setting bold_folder_labels
+    OSX: Bundle is signed in preparation for Mountain Lion
+    OSX: Added scroll bar support for the "Jump to the spot that's clicked" system preference
+    OSX: Added create_window_at_startup setting
+    OSX: Folders accessed via symlinks are monitored for changes
+    OSX: Fixed Lion press-and-hold inserting two characters
+    Windows: Installer is signed
+    Windows: Directory scanning makes use of inodes where available
+    Windows: Files are opened with the FILE_SHARE_DELETE share mode
+    Windows: Fixed a regression in command line handling with network paths
+    Windows and Linux: Tweaked command line handling when Sublime Text isn't already running
+    Linux: Tweaked handling of the Primary selection
+    Linux: GTK is loaded at runtime, removing any dependency on specific libpng versions
+    Linux: Fixed occasional jittering with the auto complete window
+    Linux: Fixed a directory watching issue
+    Linux: Sub-folders within the syntax menu on the status bar work as expected
+    Linux: Show Completions has changed from ctrl+space to alt+/, to not interfere with IMEs
+    Reworked CSS completions
+    Improved Toggle Comment for HTML and CSS
+    Added Open in Browser context menu for HTML files
+    Saving a file now calls fsync to ensure the data is written to disk
+    Added support for file_include_patterns and folder_include_patterns in projects
+    Find in Files can exclude directories using "-some_path/" syntax
+    Added BOM variants to the Save with Encoding menu
+    Added setting preview_on_click
+    Improved Indentation Detection
+    ASCII control codes are rendered in a different style
+    Auto complete and tool tips say within the screen boundaries
+    Double clicking in the tab header area will create a new tab
+    Delete Folder will prompt before moving the folder to the trash
+    Double clicking on whitespace will select only whitespace
+    Theme: Added 'expandable' attribute to tree_rows, enabling folders to be styled differently
+    Theme: Tweaked quick panel to better indicate the selected item
+    Disabling find result highlighting will also disable find-as-you-type in the Find panel
+    Pressing escape in the incremental find panel will set the selection to the search start point
+    Extended behavior of home and end keys on word wrapped lines
+    Changes in file name case are detected in the side bar
+    Fixed save_on_focus_lost causing Goto Anything to not show if the current file has unsaved changes
+    Fixed folders not being added to the recent folders list
+    Fixed rendering of active indent guides
+    Fixed pasting file:line expressions into the Goto Anything panel
+    Invalid key names in keymap files will are logged to the console
+    Build Systems: Added variants
+    Build Systems: Improved debug output of the exec command when the target isn't found
+    Build Systems: Added show_panel_on_build setting
+    Build Systems: Build times are reported
+    Build Systems: Exit code is reported, if it's non-zero
+    Build Systems: Improved output panel height serialization
+    Build Systems: Canceling a build will terminate rather than kill the process
+    Vintage: Added backspace motion (thanks mrannanj)
+    Vintage: Improved quote text object (thanks Guillermo)
+    Vintage: Added Ctrl+U and Ctrl+D (thanks misfo)
+    Vintage: 'vintage_use_clipboard' forces pasting from system clipboard too (thanks Guillermo)
+    Vintage: Fixed motions with "0" in them for actions (thanks bengolds)
+    Vintage: Visual mode I and A (thanks misfo)
+    Vintage: Added vintage_use_clipboard setting to yank to the system clipboard (thanks Guillermo)
+    Vintage: Tweaked behavior of cw and cW when the caret is in whitespace (thanks misfo)
+    Vintage: Added bindings for moving the group focus up, down, left, right (thanks misfo)
+    Vintage: Paste accepts a repeat count (thanks misfo)
+    Vintage: Added bindings for u and U in visual mode, to change the case of the selection and exit visual mode (thanks quarnster)
+    Vintage: Macro replay accepts a repeat count (thanks zbuc)
+    Vintage: r&lt;char&gt; processes lines individually (thanks Guillermo)
+    Vintage: Tweaked % behavior (thanks misfo)
+    Vintage: Fix bug that caused deletes to erroneously left_delete (thanks misfo)
+    Vintage: Fix EOF behavior with linewise changes (thanks misfo)
+    Vintage: Ignoring a and i when in visual mode (thanks Guillermo)
+    Vintage: cc and S take counts (thanks misfo)
+    Vintage: Correctly shrink selections when reversed (thanks misfo)
+    Vintage: Added vap (thanks behrends)
+    API: Added sublime.message_dialog()
+    API: Added sublime.ok_cancel_dialog()
+    API: Added Command.is_checked() to support checkbox menu items
+    API: Added sublime.log_result_regex()
+    </releaseNotes>
+    <projectUrl>http://www.sublimetext.com/2</projectUrl>
+    <tags>sublime text editor </tags>
+    <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/SublimeText2/Sublime_Text.png</iconUrl>
+  </metadata>
+</package>
