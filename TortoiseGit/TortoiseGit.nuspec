@@ -5,7 +5,7 @@
         <title>TortoiseGit</title>
         <version>1.7.14</version>
         <authors>Sven Strickroth and Frank Li</authors>
-        <owners>H. Alan Stevens</owners>
+        <owners>H. Alan Stevens,Matt Wrock</owners>
         <summary>The coolest Interface to (Git) Version Control</summary>
         <description>TortoiseGit is the coolest Interface to (Git) Version Control. It is a port of TortoiseSVN for Git. TortoiseGit supports you with regular tasks, such as committing, showing logs, diffing two versions, creating branches and tags, creating patches and so on.
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
