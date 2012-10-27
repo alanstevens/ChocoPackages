@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>dotPeek</id>
-        <version>1.0.0.7001</version>
+        <version>1.0.0.8644</version>
         <title>dotPeek</title>
         <authors>JetBrains</authors>
-        <owners>H. Alan Stevens</owners>
+        <owners>H. Alan Stevens,Matt Wrock</owners>
         <!-- <licenseUrl></licenseUrl>-->
         <projectUrl>http://www.jetbrains.com/decompiler/</projectUrl>
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/dotPeek/dotPeek.png</iconUrl>
