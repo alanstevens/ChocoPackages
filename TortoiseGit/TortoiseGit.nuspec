@@ -3,7 +3,7 @@
     <metadata>
         <id>TortoiseGit</id>
         <title>TortoiseGit</title>
-        <version>1.7.6.01</version>
+        <version>1.7.14</version>
         <authors>Sven Strickroth and Frank Li</authors>
         <owners>H. Alan Stevens</owners>
         <summary>The coolest Interface to (Git) Version Control</summary>
