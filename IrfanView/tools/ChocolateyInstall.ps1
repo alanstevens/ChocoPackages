@@ -23,7 +23,7 @@ write-host $silentArgs
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
-$packageName = 'IrfanViewPlugins'
-$silentArgs = "/silent"
-$url = 'http://lfiles3.brothersoft.com/photograph_graphics/image_viewers/irfanview_plugins_432_setup.exe'
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+#$packageName = 'IrfanViewPlugins'
+#$silentArgs = "/silent"
+#$url = 'http://irfanview.tuwien.ac.at/plugins/irfanview_plugins_433_setup.exe'
+#Install-ChocolateyPackage $packageName $fileType $silentArgs $url
