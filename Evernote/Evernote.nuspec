@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>evernote</id>
-        <version>4.5.3.1</version>
+        <version>4.5.10</version>
         <title>Evernote</title>
         <authors>Evernote Corp.</authors>
         <owners>H. Alan Stevens</owners>
