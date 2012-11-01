@@ -1,20 +1,40 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>alanstevens.vsextensions</id>
-        <version>1.04</version>
-        <title>Alan Stevens' preferred Visual Studio extensions</title>
-        <authors>H. Alan Stevens</authors>
-        <owners>H. Alan Stevens</owners>
-        <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
-        <!-- <licenseUrl></licenseUrl>-->
-        <!-- <projectUrl></projectUrl>-->
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>These are the Visual Studio 2010 extensions I install by default.
-        </description>
-        <summary>Alan Stevens' preferred Visual Studio extensions</summary>
-        <tags>Visual Studio Extensions</tags>
-        <!--<dependencies>
+  <metadata>
+    <id>alanstevens.vsextensions</id>
+    <version>1.07</version>
+    <title>Alan Stevens' preferred Visual Studio 2010 extensions</title>
+    <authors>H. Alan Stevens</authors>
+    <owners>H. Alan Stevens</owners>
+    <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
+    <!-- <licenseUrl></licenseUrl>-->
+    <!-- <projectUrl></projectUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>These are the Visual Studio 2010 extensions I install by default.
+
+      gister
+      EditorConfig
+      nuget.tools
+      ProPowerTools
+      PowerCommands
+      VSCommands
+      VsVim
+      GitSccProvider
+      PerfWatson
+      GitSccProvider
+      DevColor
+      SpellChecker
+      ThemeManager
+      WebStandardsUpdate
+      WebEssentials
+      TwitterBootstrapMvc
+      MvcTwitterBootstrap
+      WebWorkbench
+      GoOffline
+    </description>
+    <summary>Alan Stevens' preferred Visual Studio 2010 extensions</summary>
+    <tags>Visual Studio 2010 Extensions</tags>
+    <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
   </metadata>
