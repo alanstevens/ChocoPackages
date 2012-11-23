@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils</id>
     <title>Alan Stevens' Windows Utilities</title>
-    <version>1.15</version>
+    <version>1.17</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -19,62 +19,38 @@
       If possible, disable UAC before installing this package so that it can run unattended. Otherwise, you will have to approve each application's install. </description>
     <tags>utilities tools</tags>
     <dependencies>
-      <dependency id='7zip.install' />
+      <dependency id='alanstevens.utils.vm' />
       <dependency id='adobeair' />
-      <dependency id='ccleaner' />
-      <dependency id='curl' />
       <dependency id='darkroom' />
       <dependency id='dotpeek' />
       <dependency id='dropbox' />
       <dependency id='evernote' />
       <dependency id='launchy' />
-      <dependency id='fiddler' />
       <dependency id='filezilla' />
       <dependency id='firefox' />
       <dependency id='fsviewer' />
-      <dependency id='gitextensions' />
       <dependency id='githubforwindows' />
-      <dependency id='gnuwin' />
       <dependency id='googletalk' />
       <dependency id='icofx' />
-      <dependency id='ilspy' />
       <dependency id='imgburn' />
-      <dependency id='irfanview' />
       <dependency id='javaruntime' />
-      <dependency id='katmouse' />
-      <dependency id='kickassconsole' />
-      <dependency id='kickassvim' />
       <dependency id='lessmsi' />
       <dependency id='logparser.lizardgui' />
-      <dependency id='notepad2' />
-      <dependency id='p4merge' />
       <dependency id='paint.net' />
       <dependency id='pdfcreator' />
       <dependency id='pik' />
-      <dependency id='poshgit' />
       <dependency id='putty' />
       <dependency id='resourcesextract' />
       <dependency id='ruby' />
       <dependency id='ruby.devkit' />
-      <dependency id='sharpkeys' />
       <dependency id='sugarsync' />
       <dependency id='skydrive' />
       <dependency id='skype' />
-      <dependency id='specflow' />
       <dependency id='spotify' />
-      <dependency id='Sysinternals' />
-      <dependency id='teamviewer' />
-      <dependency id='testnamingmode' />
-      <dependency id='tortoisehg' />
-      <dependency id='vcredist2005' />
-      <dependency id='vcredist2008' />
-      <dependency id='vcredist2010' />
-      <dependency id='virtualclonedrive' />
-      <dependency id='wget' />
-      <dependency id='windirstat' />
       <dependency id='windowslivewriter' />
       <dependency id='winscp' />
       <dependency id='xnews' />
+      <dependency id='virtualclonedrive' />
     </dependencies>
   </metadata>
 </package>
