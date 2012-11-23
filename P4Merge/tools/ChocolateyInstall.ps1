@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'P4Merge' 'EXE' '/v"/qn ADDLOCAL=P4MERGE"' 'http://www.perforce.com/downloads/perforce/r11.1/bin.ntx86/p4vinst.exe' 'http://www.perforce.com/downloads/perforce/r11.1/bin.ntx64/p4vinst64.exe'
+Install-ChocolateyPackage 'P4Merge' 'EXE' '/v"/qn ADDLOCAL=P4MERGE"' 'http://www.perforce.com/downloads/perforce/r12.2/bin.ntx86/p4vinst.exe' 'http://www.perforce.com/downloads/perforce/r12.2/bin.ntx64/p4vinst64.exe'
