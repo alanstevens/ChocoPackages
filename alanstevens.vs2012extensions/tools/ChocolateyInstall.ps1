@@ -50,6 +50,7 @@ try {
     installsilently http://visualstudiogallery.msdn.microsoft.com/7dbae8b3-5812-490e-913e-7bfe17f47f1d/file/29587/13/donmar.devColor.vsix DevColor.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/23d11b45-c2ed-4398-9cb5-48ea67878470/file/77232/3/Twitter%20Bootstrap%20MVC.vsix TwitterBootstrapMvc.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/f2ec6478-7fa2-4782-9fc0-e6d9ef8bb3a9/file/79408/4/MvcTwitterBootstrap.vsix MvcTwitterBootstrap.vsix
+    installsilently http://visualstudiogallery.msdn.microsoft.com/1460ab21-75be-49d0-900f-dfd538321424/file/54475/10/ConsoleLauncher.vsix ConsoleLauncher
     installsilently http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a/file/53962/24/Mindscape.WebWorkbench.Integration.10.vsix WebWorkbench.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/6e54271c-2c4e-4911-a1b4-a65a588ae138/file/85910/4/TfsGoOffline.vsix Tfs-GoOffline
 

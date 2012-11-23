@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>alanstevens.vs2012extensions</id>
-    <version>1.03</version>
+    <version>1.04</version>
     <title>Alan Stevens' preferred Visual Studio 2012 extensions</title>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
@@ -17,7 +17,7 @@
       NuGet
       PowerCommands
       VsVim
-      WebEssentials
+      Web Essentials
       ColorThemeEditor
       GitSccProvider
       EfPowerTools
@@ -26,8 +26,9 @@
       DevColor
       TwitterBootstrapMvc
       MvcTwitterBootstrap
-      WebWorkbench
+      Web Workbench
       Tfs-GoOffline
+      Console Launcher
     </description>
     <summary>Alan Stevens' preferred Visual Studio 2012 extensions</summary>
     <tags>Visual Studio 2012 Extensions</tags>

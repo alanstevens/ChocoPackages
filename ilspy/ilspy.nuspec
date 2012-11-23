@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.1.0.1000</version>
+    <authors>Daniel Grunwald,David Srbecky,Ed Harvey,Siegfried Pammer,Artur Zgodzinski</authors>
+    <owners>Jon Galloway, Alan Stevens</owners>
+    <licenseUrl>https://github.com/icsharpcode/ILSpy#readme</licenseUrl>
+    <projectUrl>http://wiki.sharpdevelop.net/ILSpy.ashx</projectUrl>
+    <iconUrl>http://cloud.ohloh.net/attachments/42278/ILSpy_med.png</iconUrl>
+    <id>ilspy</id>
+    <title>ILSpy</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ILSpy is the open-source .NET assembly browser and decompiler.</description>
+    <summary>ILSpy is the open-source .NET assembly browser and decompiler.</summary>
+    <tags>ilspy decompiler chocolatey</tags>
+  </metadata>
+</package>

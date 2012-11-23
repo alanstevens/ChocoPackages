@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>alanstevens.vsextensions</id>
-    <version>1.07</version>
+    <version>1.08</version>
     <title>Alan Stevens' preferred Visual Studio 2010 extensions</title>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
@@ -31,6 +31,7 @@
       MvcTwitterBootstrap
       WebWorkbench
       GoOffline
+      Console Launcher
     </description>
     <summary>Alan Stevens' preferred Visual Studio 2010 extensions</summary>
     <tags>Visual Studio 2010 Extensions</tags>
