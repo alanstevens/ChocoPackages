@@ -1,10 +1,20 @@
 $packageName = 'Growl'
-$fileType = 'msi'
-$silentArgs = '/QN'
-$url = 'http://www.growlforwindows.com/gfw/d.ashx?f=Growl_v2.0.8.1.zip'
-$chocTempDir = Join-Path $env:TEMP "chocolatey"
-$unzipLocation = Join-Path $chocTempDir "$packageName"
-$file = Join-Path $unzipLocation 'Growl_v2.0.msi'
 
-Install-ChocolateyZipPackage $packageName $url $unzipLocation
-Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
+try
+{
+    $params = @{
+        packageName = $package;
+        fileType = 'exe';
+        silentArgs = '/c:"msiexec -i Growl_v2.0.msi /qn"'
+        url = 'http://www.growlforwindows.com/gfw/d.ashx?f=GrowlInstaller.exe';
+    }
+
+    Install-ChocolateyPackage @params
+
+    Write-ChocolateySuccess $packageName
+}
+catch
+{
+    Write-ChocolateyFailure $package "$($_.Exception.Message)"
+    throw
+}
