@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>TortoiseGit</id>
-        <version>1.8.0</version>
+        <version>1.8.1</version>
         <title>TortoiseGit</title>
         <authors>Sven Strickroth and Frank Li</authors>
         <owners>H. Alan Stevens,Matt Wrock,Pure Krome</owners>
