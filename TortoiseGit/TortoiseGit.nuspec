@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>TortoiseGit</id>
-        <version>1.8.1</version>
+        <version>1.8.2</version>
         <title>TortoiseGit</title>
         <authors>Sven Strickroth and Frank Li</authors>
         <owners>H. Alan Stevens,Matt Wrock,Pure Krome</owners>
@@ -14,6 +14,9 @@
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <summary>The coolest Interface to (Git) Version Control</summary>
         <tags>git tortoise chocolatey</tags>
+        <dependencies>
+            <dependency id="git" version="1.8.1.2" />
+        </dependencies>
     </metadata>
     <files>
         <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
