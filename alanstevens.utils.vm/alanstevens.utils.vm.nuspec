@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils.vm</id>
     <title>Alan Stevens' Windows VM Utilities</title>
-    <version>1.00</version>
+    <version>1.01</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -33,10 +33,11 @@
       <dependency id='notepad2' />
       <dependency id='p4merge' />
       <dependency id='poshgit' />
+      <dependency id='ruby' />
+      <dependency id='ruby.devkit' />
       <dependency id='sharpkeys' />
       <dependency id='specflow' />
       <dependency id='Sysinternals' />
-      <dependency id='teamviewer' />
       <dependency id='testnamingmode' />
       <dependency id='tortoisehg' />
       <dependency id='vcredist2005' />
