@@ -1,9 +1,9 @@
 $packageName = 'mp3tag'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url = 'http://download.mp3tag.de/mp3tagv253setup.exe'
+$url = 'http://download.mp3tag.de/mp3tagv255asetup.exe'
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
+Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
 write-host 'Integrating Mp3tag with Explorer.'
 
