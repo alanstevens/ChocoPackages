@@ -1,7 +1,6 @@
 $packageName = 'ilspy'
 $url = 'http://downloads.sourceforge.net/project/sharpdevelop/ILSpy/2.0/ILSpy_Master_2.1.0.1603_RTW_Binaries.zip'
 
-
 $binRoot = "$env:systemdrive\"
 ### Using an environment variable to to define the bin root until we implement YAML configuration ###
 if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}

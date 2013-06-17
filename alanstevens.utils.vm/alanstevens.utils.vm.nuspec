@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils.vm</id>
     <title>Alan Stevens' Windows VM Utilities</title>
-    <version>1.01</version>
+    <version>1.02</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -22,21 +22,31 @@
       <dependency id='7zip.install' />
       <dependency id='ccleaner' />
       <dependency id='curl' />
+      <dependency id='darkroom' />
       <dependency id='fiddler' />
+      <dependency id='filezilla' />
+      <dependency id='firefox' />
+      <dependency id='fsviewer' />
       <dependency id='gitextensions' />
+      <dependency id='githubforwindows' />
       <dependency id='gnuwin' />
+      <dependency id='grepwin' />
       <dependency id='ilspy' />
       <dependency id='irfanview' />
-      <dependency id='katmouse' />
       <dependency id='kickassconsole' />
       <dependency id='kickassvim' />
+      <dependency id='lessmsi' />
       <dependency id='notepad2' />
+      <dependency id='nuget.commandline' />
       <dependency id='p4merge' />
+      <dependency id='paint.net' />
+      <dependency id='pik' />
       <dependency id='poshgit' />
+      <dependency id='putty' />
+      <dependency id='resourcesextract' />
       <dependency id='ruby' />
       <dependency id='ruby.devkit' />
       <dependency id='sharpkeys' />
-      <dependency id='specflow' />
       <dependency id='Sysinternals' />
       <dependency id='testnamingmode' />
       <dependency id='tortoisehg' />
@@ -45,6 +55,7 @@
       <dependency id='vcredist2010' />
       <dependency id='wget' />
       <dependency id='windirstat' />
+      <dependency id='wizmouse' />
     </dependencies>
   </metadata>
 </package>

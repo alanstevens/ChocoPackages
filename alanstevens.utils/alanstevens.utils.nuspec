@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils</id>
     <title>Alan Stevens' Windows Utilities</title>
-    <version>1.18</version>
+    <version>1.19</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -20,34 +20,7 @@
     <tags>utilities tools</tags>
     <dependencies>
       <dependency id='alanstevens.utils.vm' />
-      <dependency id='adobeair' />
-      <dependency id='darkroom' />
-      <dependency id='dotpeek' />
-      <dependency id='dropbox' />
-      <dependency id='evernote' />
-      <dependency id='launchy' />
-      <dependency id='filezilla' />
-      <dependency id='firefox' />
-      <dependency id='fsviewer' />
-      <dependency id='githubforwindows' />
-      <dependency id='googletalk' />
-      <dependency id='icofx' />
       <dependency id='imgburn' />
-      <dependency id='javaruntime' />
-      <dependency id='lessmsi' />
-      <dependency id='logparser.lizardgui' />
-      <dependency id='paint.net' />
-      <dependency id='pdfcreator' />
-      <dependency id='pik' />
-      <dependency id='putty' />
-      <dependency id='resourcesextract' />
-      <dependency id='sugarsync' />
-      <dependency id='skydrive' />
-      <dependency id='skype' />
-      <dependency id='spotify' />
-      <dependency id='windowslivewriter' />
-      <dependency id='winscp' />
-      <dependency id='xnews' />
       <dependency id='virtualclonedrive' />
     </dependencies>
   </metadata>
