@@ -33,7 +33,7 @@ if(Test-Path $targetFile){
 
 #add custom config file
 $configFile = join-path $contentDir 'console.xml'
-Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "TCCLE13", "$tccFolder" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $targetFile
+Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $targetFile
 
 # Add custom aliases
 $aliasFile = 'aliases.bat'

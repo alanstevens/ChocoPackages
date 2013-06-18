@@ -179,7 +179,16 @@
         </image>
       </background>
     </tab>
-    <tab title="Visual Studio Command Prompt" icon="CONTENT_DIR\vscmd.ico" use_default_icon="0">
+    <tab title="Visual Studio 2012 Command Prompt" icon="CONTENT_DIR\vs11cmd.ico" use_default_icon="0">
+      <console shell="%comspec% /k &quot;%VS110COMNTOOLS%vsvars32.bat&quot;" init_dir="." run_as_user="0" user=""/>
+      <cursor style="0" r="255" g="255" b="255"/>
+      <background type="0" r="0" g="0" b="0">
+        <image file="" relative="0" extend="0" position="0">
+          <tint opacity="0" r="0" g="0" b="0"/>
+        </image>
+      </background>
+    </tab>
+    <tab title="Visual Studio 2010 Command Prompt" icon="CONTENT_DIR\vscmd.ico" use_default_icon="0">
       <console shell="%comspec% /k &quot;%VS100COMNTOOLS%vsvars32.bat&quot;" init_dir="." run_as_user="0" user=""/>
       <cursor style="0" r="255" g="255" b="255"/>
       <background type="0" r="0" g="0" b="0">
@@ -191,15 +200,6 @@
     <tab title="PowerShell" icon="CONTENT_DIR\powershell.ico" use_default_icon="0">
       <console shell="%windir%\system32\windowspowershell\v1.0\powershell.exe" init_dir="." run_as_user="0" user=""/>
       <cursor style="0" r="255" g="255" b="0"/>
-      <background type="0" r="0" g="0" b="0">
-        <image file="" relative="0" extend="0" position="0">
-          <tint opacity="0" r="0" g="0" b="0"/>
-        </image>
-      </background>
-    </tab>
-    <tab title="TCC" icon="CONTENT_DIR\tcc.ico" use_default_icon="0">
-      <console shell="PROGRAM_FILES_64\JPSoft\TCCLE13\tcc.exe" init_dir="." run_as_user="0" user=""/>
-      <cursor style="0" r="255" g="255" b="255"/>
       <background type="0" r="0" g="0" b="0">
         <image file="" relative="0" extend="0" position="0">
           <tint opacity="0" r="0" g="0" b="0"/>
