@@ -5,6 +5,8 @@ $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
+Chocolatey-Cygwin default
+
 [Environment]::SetEnvironmentVariable('TERM', 'cygwin', 'User')
 [Environment]::SetEnvironmentVariable('LESS ', 'FRSX', 'User')
 
@@ -14,11 +16,6 @@ if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 $programFiles64 = $programFiles
-$tccFolder='TCCLE13'
-if ($is64bit) {
-  $programFiles64 = $env:ProgramW6432
-  $tccFolder='TCCLE13x64'
-  }
 
 $targetFile = join-path $env:appdata 'console\console.xml'
 
@@ -31,9 +28,12 @@ if(Test-Path $targetFile){
   write-host "Backing up $targetFile as $backupFile."
   move-item $targetFile $backupFile -force }
 
+$binRoot = "$env:systemdrive\"
+if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+
 #add custom config file
 $configFile = join-path $contentDir 'console.xml'
-Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles"} | Set-Content $targetFile
+Get-Content $configFile | Foreach-Object{$_ -replace "CONTENT_DIR", "$contentDir" -replace "PROGRAM_FILES_64", "$programFiles64" -replace "PROGRAM_FILES", "$programFiles" -replace "BIN_ROOT", "$binRoot"} | Set-Content $targetFile
 
 # Add custom aliases
 $aliasFile = 'aliases.bat'

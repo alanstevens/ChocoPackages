@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kickassconsole</id>
-    <version>0.1.7</version>
+    <version>0.1.8</version>
     <title>Kick Ass Console</title>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
@@ -19,7 +19,7 @@
       <dependency id="console-devel" />
       <dependency id="msysgit" />
       <dependency id="cmdaliases" />
-      <!-- <dependency id="cygwin" />-->
+      <dependency id="cyg-get" />
     </dependencies>
   </metadata>
 </package>
