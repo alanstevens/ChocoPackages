@@ -17,7 +17,7 @@ $fileType = 'exe'
 
 $silentArgs = "/silent /folder=`"$irfanViewPath`" /desktop=0 /thunbs=0 /group=1 /allusers=0 /assoc=1"
 
-$url = 'http://software-files-a.cnet.com/s/software/12/48/66/01/iview433_setup.exe'
+$url = 'http://www12.tucows.com/windows/files/iview435_setup.exe'
 
 write-host $silentArgs
 
@@ -25,5 +25,5 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
 #$packageName = 'IrfanViewPlugins'
 #$silentArgs = "/silent"
-#$url = 'http://irfanview.tuwien.ac.at/plugins/irfanview_plugins_433_setup.exe'
+#$url = 'http://www12.tucows.com/windows/files/irfanview_plugins_435_setup.exe'
 #Install-ChocolateyPackage $packageName $fileType $silentArgs $url

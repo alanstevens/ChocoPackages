@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils.vm</id>
     <title>Alan Stevens' Windows VM Utilities</title>
-    <version>1.04</version>
+    <version>1.05</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -20,6 +20,8 @@
     <tags>utilities tools</tags>
     <dependencies>
       <dependency id='7zip.install' />
+      <dependency id='ac' />
+      <dependency id='autohotkey' />
       <dependency id='ccleaner' />
       <dependency id='curl' />
       <dependency id='darkroom' />
@@ -28,11 +30,9 @@
       <dependency id='firefox' />
       <dependency id='fsviewer' />
       <dependency id='gitextensions' />
-      <dependency id='githubforwindows' />
       <dependency id='gnuwin' />
       <dependency id='grepwin' />
       <dependency id='ilspy' />
-      <!-- <dependency id='irfanview' />-->
       <dependency id='kickassconsole' />
       <dependency id='kickassvim' />
       <dependency id='lessmsi' />
@@ -47,6 +47,7 @@
       <dependency id='ruby' />
       <dependency id='ruby.devkit' />
       <dependency id='sharpkeys' />
+      <dependency id='strawberryperl' />
       <dependency id='Sysinternals' />
       <dependency id='testnamingmode' />
       <dependency id='tortoisehg' />

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>StrawberryPerl</id>
-        <version>5.12.3.1</version>
+        <version>5.16.3.1</version>
         <title>StrawberryPerl</title>
         <authors>Vanilla Perl Project</authors>
         <owners>H. Alan Stevens</owners>
