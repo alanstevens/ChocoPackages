@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Cygwin</id>
-    <version>1.7.20</version>
+    <version>1.7.20.1</version>
     <title>Cygwin</title>
     <authors>Red Hat, Inc.</authors>
     <owners>H. Alan Stevens</owners>
     <licenseUrl>http://cygwin.com/license.html</licenseUrl>
     <projectUrl>http://cygwin.com/</projectUrl>
-    <iconUrl>https://raw.github.com/alanstevens/chocopackages/master/cygwin/content/Cygwin.png</iconUrl>
+    <iconUrl>https://raw.github.com/alanstevens/ChocoPackages/master/Cygwin/content/Cygwin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Cygwin is a collection of tools which provide a Linux look and feel environment for Windows.
