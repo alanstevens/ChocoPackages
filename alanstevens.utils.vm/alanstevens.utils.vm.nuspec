@@ -3,7 +3,7 @@
   <metadata>
     <id>alanstevens.utils.vm</id>
     <title>Alan Stevens' Windows VM Utilities</title>
-    <version>1.05</version>
+    <version>1.07</version>
     <authors>H. Alan Stevens</authors>
     <owners>H. Alan Stevens</owners>
     <iconUrl>http://www.elmoensio.com/sisalmykset/wp-content/uploads/2011/07/Robocop-on-a-pink-unicorn-with-rainbow-in-the-background-217x300.jpg</iconUrl>
@@ -20,7 +20,7 @@
     <tags>utilities tools</tags>
     <dependencies>
       <dependency id='7zip.install' />
-      <dependency id='ac' />
+      <dependency id='ack' />
       <dependency id='autohotkey' />
       <dependency id='ccleaner' />
       <dependency id='curl' />
@@ -36,6 +36,7 @@
       <dependency id='kickassconsole' />
       <dependency id='kickassvim' />
       <dependency id='lessmsi' />
+      <dependency id='nodejs' />
       <dependency id='notepad2' />
       <dependency id='nuget.commandline' />
       <dependency id='p4merge' />
@@ -47,6 +48,7 @@
       <dependency id='ruby' />
       <dependency id='ruby.devkit' />
       <dependency id='sharpkeys' />
+      <dependency id='sourcetree' />
       <dependency id='strawberryperl' />
       <dependency id='Sysinternals' />
       <dependency id='testnamingmode' />
