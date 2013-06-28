@@ -1,23 +1,25 @@
-$packageName = 'mp3tag'
-$fileType = 'exe'
-$silentArgs = '/S'
-$url = 'http://download.mp3tag.de/mp3tagv255asetup.exe'
+﻿try {
+    $packageName = 'mp3tag'
+    $fileType = 'exe'
+    $silentArgs = '/S'
+    $url = 'http://download.mp3tag.de/mp3tagv256setup.exe'
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+    $iniFile = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\..\content\Mp3tagSetup.ini"
+    $chocoTempDir = "$env:TEMP\chocolatey\$packageName\"
 
-write-host 'Integrating Mp3tag with Explorer.'
+    # Automatic language selection
+    $iniContent = Get-Content $iniFile
+    $LCID = (Get-Culture).LCID
+    $iniContent = $iniContent -replace 'language=.+', "language=$LCID"
+    $iniContent > $iniFile
 
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
+    if (-not (Test-Path $chocoTempDir)) {New-Item $chocoTempDir -ItemType directory}
+    Copy-Item $iniFile $chocoTempDir -Force
 
-#add right click menu
-$infFile = join-path $contentDir 'EditWithMp3Tag.inf'
+    Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
-$is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-$programFiles = $env:programfiles
-if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
-
-Get-Content $infFile | Foreach-Object{$_ -replace 'PROGRAM_FILES', "$programFiles" -replace 'CONTENT_PATH', "$contentDir"} | Set-Content 'TempFile.txt'
-move-item 'TempFile.txt' $infFile -Force
-
-Start-ChocolateyProcessAsAdmin "& rundll32 syssetup,SetupInfObjectInstallAction DefaultInstall 128 $infFile"
+    Write-ChocolateySuccess $packageName
+    } catch {
+        Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+        throw
+}
