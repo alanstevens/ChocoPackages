@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>dotPeek</id>
-        <version>1.0.0.8644</version>
+        <version>1.1.1.33</version>
         <title>dotPeek</title>
         <authors>JetBrains</authors>
         <owners>H. Alan Stevens,Matt Wrock</owners>
@@ -14,6 +14,7 @@
         </description>
         <summary>dotPeek is a new free .NET decompiler from JetBrains, the makers of ReSharper, dotTrace, and dotCover for .NET developers.</summary>
         <tags>.net decompiler</tags>
+        <releaseNotes>http://youtrack.jetbrains.com/releaseNotes?q=in%3A+dotpeek+fix+version%3A+1.1+sort+by%3A+votes+%23Resolved&amp;title=dotPeek+1.1+release+notes&amp;token=10nvfgt40xzyt19vt080cy5ptc&amp;showDescription=false&amp;showComments=false</releaseNotes>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

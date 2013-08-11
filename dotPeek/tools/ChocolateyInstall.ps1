@@ -1,5 +1,8 @@
 $packageName = 'dotPeek'
-$url = 'http://download.jetbrains.com/dotpeek/dotPeek-1.0.0.8644.zip'
-$unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$installerType = 'msi'
+$url = 'http://download.jetbrains.com/dotpeek/dotPeekSetup-1.1.1.33.msi'
+$url64 = $url
+$silentArgs = '/quiet'
+$validExitCodes = @(0)
 
-Install-ChocolateyZipPackage $packageName $url $unzipLocation
+Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url64 -validExitCodes $validExitCodes
