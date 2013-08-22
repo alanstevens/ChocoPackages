@@ -1,6 +1,6 @@
 
 $packageName = 'ansicon'
-$url = 'https://github.com/downloads/adoxa/ansicon/ansi153.zip'
+$url = 'http://adoxa.hostmyway.net/ansicon/dl.php?f=ansicon'
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
 $unzipLocation = Join-Path $chocTempDir "$packageName"
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
