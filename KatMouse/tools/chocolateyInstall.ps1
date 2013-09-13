@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'KatMousInst.exe' 'EXE' '/S' 'http://ehiti.de/katmouse/KatMouseInst.exe'
+Install-ChocolateyPackage 'KatMouseSetup.exe' 'EXE' '/S' 'http://ehiti.de/katmouse/KatMouseSetup.exe'
