@@ -5,7 +5,7 @@ $toolsDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $contentDir = ($toolsDir | Split-Path | Join-Path -ChildPath "content")
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 
-Chocolatey-Cygwin default
+#Chocolatey-Cygwin default
 
 [Environment]::SetEnvironmentVariable('TERM', 'cygwin', 'User')
 [Environment]::SetEnvironmentVariable('LESS ', 'FRSX', 'User')
