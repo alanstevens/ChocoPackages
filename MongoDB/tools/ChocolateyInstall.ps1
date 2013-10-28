@@ -1,6 +1,6 @@
 
 $packageName = 'MongoDB'
-$mongoVersion = '2.2.0'
+$mongoVersion = '2.4.7'
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 $fileName = "mongodb-win32-i386-$mongoVersion"
 if ($is64bit) {$fileName = "mongodb-win32-x86`_64-$mongoVersion"}
@@ -39,4 +39,4 @@ $batchFileName = Join-Path $binDir 'MongoRotateLogs.bat'
 $executable --eval `'db.runCommand(`"logRotate`")`' mongohost:27017/admin" | Out-File $batchFileName -encoding ASCII
 
 # Install and start mongodb as a Windows service
-Start-ChocolateyProcessAsAdmin "& $mongod --quiet --bind_ip 127.0.0.1 --logpath $(join-path $logsDir 'MongoDB.log') --logappend --dbpath $dataDir --directoryperdb --reinstall; net start `"MongoDB`""
+Start-ChocolateyProcessAsAdmin "& $mongod --quiet --bind_ip 127.0.0.1 --logpath $(join-path $logsDir 'MongoDB.log') --logappend --dbpath $dataDir --directoryperdb --install; net start `"MongoDB`""
