@@ -1,6 +1,7 @@
-$packageName = 'evernote'
-$fileType = 'exe'
+$packageName = 'Evernote'
+$installerType = 'exe'
 $silentArgs = '/quiet'
-$url = 'http://evernote.s3.amazonaws.com/win4/public/Evernote_4.5.10.7472.exe'
+$url = 'http://evernote.com/download/get.php?file=Win' # No 64-bit version available
+$validExitCodes = @(0)
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes
