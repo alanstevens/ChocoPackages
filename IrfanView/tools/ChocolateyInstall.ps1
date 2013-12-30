@@ -17,7 +17,7 @@ $fileType = 'exe'
 
 $silentArgs = "/silent /folder=`"$irfanViewPath`" /desktop=0 /thunbs=0 /group=1 /allusers=0 /assoc=1"
 
-$url = 'http://www12.tucows.com/windows/files/iview436_setup.exe'
+$url = 'http://www12.tucows.com/windows/files/iview437_setup.exe'
 
 write-host $silentArgs
 
