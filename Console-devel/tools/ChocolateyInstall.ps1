@@ -2,8 +2,8 @@
 $packageName = 'Console-devel'
 $fileType = 'exe'
 $silentArgs = '/silent'
-$url = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b147a/Console%202.00b147a%20win32.exe'
-$url64bit = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b147a/Console%202.00b147a%20x64.exe'
+$url = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b148d/Console%202.00b148d%20win32.exe'
+$url64bit = 'http://sourceforge.net/projects/console-devel/files/console-releases/2.0b148d/Console%202.00b148d%20x64.exe'
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
