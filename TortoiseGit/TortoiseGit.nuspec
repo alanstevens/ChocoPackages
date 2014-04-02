@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>TortoiseGit</id>
-        <version>1.8.7.0</version>
+        <version>1.8.8.0</version>
         <title>TortoiseGit</title>
         <authors>Sven Strickroth and Frank Li</authors>
-        <owners>H. Alan Stevens, Matt Wrock, Pure Krome</owners>
+        <owners>H. Alan Stevens,Matt Wrock,Pure Krome</owners>
         <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
         <projectUrl>http://code.google.com/p/tortoisegit/</projectUrl>
         <iconUrl>http://code.google.com/p/tortoisegit/logo?cct=1325243386</iconUrl>
