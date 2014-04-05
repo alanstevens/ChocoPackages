@@ -12,8 +12,8 @@ $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 #install batch file in path
 $nugetBin = join-path $env:chocolateyinstall 'bin'
 $cmdFile = join-path $contentPath 'gvim.cmd'
-$vimDir = join-path $env:programfiles 'vim\vim73'
-if ($is64bit) {$vimDir = join-path  ${env:ProgramFiles(x86)} 'vim\vim73'}
+$vimDir = join-path $env:programfiles 'vim\vim74'
+if ($is64bit) {$vimDir = join-path  ${env:ProgramFiles(x86)} 'vim\vim74'}
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $vimDir = $fsObject.GetFolder("$vimDir").ShortPath
 
