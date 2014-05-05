@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'FoxitReader6010.1213_L10N_Setup.exe' 'EXE' '/quiet' 'http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/win/6.x/6.0/L10N/FoxitReader6010.1213_L10N_Setup.exe'
+Install-ChocolateyPackage 'FoxitReader620.0429_enu_Setup.exe' 'EXE' '/verysilent' 'http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/win/6.x/6.2/enu/FoxitReader620.0429_enu_Setup.exe'
