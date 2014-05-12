@@ -3,7 +3,7 @@
   <metadata>
     <id>FoxitReader</id>
     <title>Foxit Reader</title>
-    <version>6.0.10.1213</version>
+    <version>6.2.0.0429</version>
     <authors>Foxit Software</authors>
     <owners>H. Alan Stevens</owners>
     <summary>Foxit Reader: The Best PDF Reader</summary>
@@ -11,7 +11,7 @@
     | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://foxitsoftware.com/Secure_PDF_Reader/</projectUrl>
     <tags>Foxit Reader pdf chocolatey</tags>
-    <licenseUrl>http://foxitsoftware.com/pdf/rd_eula.htm</licenseUrl>
+    <licenseUrl>http://foxitsoftware.com/pdf/etp_eula.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/FoxitReader/FoxitReader.png</iconUrl>
   </metadata>
