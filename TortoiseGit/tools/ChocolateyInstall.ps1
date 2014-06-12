@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'TortoiseGit' 'MSI' '/QN /norestart REBOOT=ReallySuppress' 'http://download.tortoisegit.org/tgit/1.8.8.0/TortoiseGit-1.8.8.0-32bit.msi' 'http://download.tortoisegit.org/tgit/1.8.8.0/TortoiseGit-1.8.8.0-64bit.msi'
+Install-ChocolateyPackage 'TortoiseGit' 'MSI' '/QN /norestart REBOOT=ReallySuppress' 'http://download.tortoisegit.org/tgit/1.8.9.0/TortoiseGit-1.8.9.0-32bit.msi' 'http://download.tortoisegit.org/tgit/1.8.9.0/TortoiseGit-1.8.9.0-64bit.msi'
