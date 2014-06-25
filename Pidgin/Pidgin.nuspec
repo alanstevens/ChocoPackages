@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>pidgin</id>
-        <version>2.10.8</version>
+        <version>2.10.9</version>
         <title>Pidgin</title>
         <authors>John Bailey et al.</authors>
         <owners>H. Alan Stevens</owners>
@@ -14,7 +14,7 @@
         <description>Pidgin is a chat program which lets you log in to accounts on multiple chat networks simultaneously. Pidgin is a GTK+ instant messaging application for Windows and Unix. It supports AIM, ICQ, Jabber/XMPP, MSN, Yahoo!, Bonjour, Gadu-Gadu, IRC, QQ, SILC, SIMPLE and more. See http://pidgin.im/about for more information.
         </description>
         <summary>Pidgin is a chat program which lets you log in to accounts on multiple chat networks simultaneously.</summary>
-        <releaseNotes>Fixed missing icon</releaseNotes>
+        <releaseNotes>Pidgin 2.10.8 contains important security updates and fixes an untrusted AIM SSL certificate. Pidgin 2.10.9 fixes logins to some XMPP servers.</releaseNotes>
         <tags>chat</tags>
         <!--<dependencies>
       <dependency id="" version="" />
