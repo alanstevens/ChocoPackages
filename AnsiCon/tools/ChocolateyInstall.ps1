@@ -1,54 +1,55 @@
+$id = "ansicon"
+$key = "HKCU:\Software\Microsoft\Command Processor"
+$url = "https://github.com/adoxa/ansicon/releases/download/v1.66/ansi166.zip"
 
-$packageName = 'ansicon'
-$url = 'https://github.com/adoxa/ansicon/releases/download/v1.66/ansi166.zip'
-$chocTempDir = Join-Path $env:TEMP "chocolatey"
-$unzipLocation = Join-Path $chocTempDir "$packageName"
-$is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-$sourceDir = Join-Path $unzipLocation 'x86'
-if($is64bit){$sourceDir = Join-Path $unzipLocation 'x64'}
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$targetDir = $(join-path $toolsDir $packageName)
+$is64bit = Get-ProcessorBits 64
+$subfolder = @{$true="x64";$false="x86"}
 
-if(!(test-path $targetDir)){
-  Install-ChocolateyZipPackage $packageName $url $unzipLocation
-  # If ansicon is in use in the current console, this will fail :-(
-  move-item $sourceDir $targetDir -force
+$tools = Split-Path $MyInvocation.MyCommand.Definition
+$content = Join-Path (Split-Path $tools) "content"
+$ansicon = Join-Path $content (Join-Path $subfolder[$is64bit] $id)
+$ignore = Join-Path $content (Join-Path $subfolder[-not $is64bit] "$id.exe.ignore")
+
+Install-ChocolateyZipPackage $id $url $content
+
+New-Item $ignore -Type File -Force | Out-Null
+
+# ANSICON -i produces a Command Processor AutoRun property with these attributes
+#
+#   * at the beginning of the property
+#   * surrounded by parenthesis
+#   * separated by a single & (when there are existing commands)
+#   * without the file extension
+#
+# Example without existing commands:
+# 
+#   (if %ANSICON_VER%==^%ANSICON_VER^% "path\to\ansicon" -p)
+#
+# Example with existing commands:
+# 
+#   (if %ANSICON_VER%==^%ANSICON_VER^% "path\to\ansicon" -p)&<other-commands>
+#
+$statement = "(if %ANSICON_VER%==^%ANSICON_VER^% `"$ansicon`" -p)"
+$pattern = '(?<ansicon>\(if %ANSICON_VER%==\^%ANSICON_VER\^% ".*" -p\))'
+
+$autorun = (Get-ItemProperty -Path $key).AutoRun
+
+$autorun -match $pattern
+$match = $matches["ansicon"]
+
+Write-Debug "[ANSICON] Adding ANSICON to the Command Processor AutoRun registry: `"$autorun`""
+
+if(-not $autorun) {
+  $autorun = $statement
+}
+elseif($match) {
+  Write-Debug "[ANSICON] Replacing existing ANSICON command: `"$match`""
+  $autorun = $autorun -replace [regex]::Escape($match), $statement
+}
+else {
+  $autorun = $statement + "&" + $autorun
 }
 
-$ansicon = 'ansicon.exe'
-$targetFile = "(if %ANSICON_VER%==^%ANSICON_VER^% `"$(join-path $targetDir $ansicon)`" -p)"
+Write-Debug "[ANSICON] New AutoRun value: `"$autorun`""
 
-$registryKey = 'HKCU:\Software\Microsoft\Command Processor'
-$keyProperty = 'AutoRun'
-$currentValue = (Get-ItemProperty $registryKey).$keyProperty
-$newValue = ''
-
-write-host 'Adding ansicon to the command processor autorun registry key'
-
-#check for empty value
-if($currentValue){
-  #check for multiple values
-  if($currentValue.Contains('&&')){
-    #split on '&&'
-    $currentValues = $currentValue.Split('&&')
-
-    #check each value for $aliasFile
-    ForEach ($value in $currentValues){
-      if(!$value.ToLower().Contains($ansicon.ToLower()) -and ![string]::IsNullOrEmpty($value)){
-        $newValue += "$value`&`&"
-      }
-    }
-    $newValue += $targetFile
-  }
-  else{
-    if($currentValue.ToLower().Contains($ansicon.ToLower())){
-      $newValue = $targetFile
-    }else{
-      $newValue = "$currentValue`&`&$targetFile"
-    }
-  }
-}else{
-  $newValue = $targetFile
-}
-
-Set-ItemProperty -Path $registryKey -Name $keyProperty -Value $newValue -Type string
+Set-ItemProperty -Path $key -Name "AutoRun" -Value $autorun -Type String
