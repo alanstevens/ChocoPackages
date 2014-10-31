@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>wizmouse</id>
-    <version>1.6.0.2</version>
+    <version>1.7.0.3</version>
     <title>WizMouse</title>
     <authors>Antibody Software</authors>
     <owners>H. Alan Stevens</owners>
