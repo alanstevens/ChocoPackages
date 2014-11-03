@@ -1,5 +1,5 @@
 $packageName = 'winscp'
-$url = 'http://prdownloads.sourceforge.net/winscp/winscp551setup.exe'
+$url = 'http://prdownloads.sourceforge.net/winscp/winscp556setup.exe'
 $language = (Get-Culture).TwoLetterISOLanguageName
 
 if ($language -eq $null) {
