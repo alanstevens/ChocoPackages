@@ -15,4 +15,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/IrfanView/IrfanView.png</iconUrl>
     </metadata>
+	<files>
+        <file src="tools\**" target="tools" />
+    </files>
 </package>
