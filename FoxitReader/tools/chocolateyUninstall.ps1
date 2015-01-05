@@ -1,8 +1,16 @@
 function Get-UninstallString {
-	$regPath = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Foxit Reader_is1'
+	$processor = Get-WmiObject Win32_Processor 
+	$is64bit = $processor.AddressWidth -eq 64 
+
+	# for 32-bit systems
+	$regPath = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Foxit Reader_is1'
+	if ($is64bit) {
+		$regPath = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Foxit Reader_is1'
+	}
+
 	$key = Get-Item -Path $regPath -ErrorAction Stop
 	$uninstallString = $key.GetValue('UninstallString')
-	
+
 	if ($uninstallString) {
 		return $uninstallString
 	}
