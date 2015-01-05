@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>FoxitReader</id>
+    <id>foxitreader</id>
     <title>Foxit Reader</title>
-    <version>6.2.0.0429</version>
+    <version>7.0.6.1126</version>
     <authors>Foxit Software</authors>
-    <owners>H. Alan Stevens</owners>
+    <owners>ComFreek H. Alan Stevens</owners>
     <summary>Foxit Reader: The Best PDF Reader</summary>
     <description>Foxit Reader: The Best PDF Reader. With Foxit Reader you can read and annotate PDF documents and fill out PDF forms.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+Only the English version is provided because it is bundled with the highest version of Foxit Reader among all languages.</description>
     <projectUrl>http://foxitsoftware.com/Secure_PDF_Reader/</projectUrl>
-    <tags>Foxit Reader pdf chocolatey</tags>
-    <licenseUrl>http://foxitsoftware.com/pdf/etp_eula.htm</licenseUrl>
+    <tags>Foxit PDF Reader office admin</tags>
+    <licenseUrl>http://www.foxitsoftware.com/Secure_PDF_Reader/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/FoxitReader/FoxitReader.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ComFreek/chocolatey-packages/master/icons/FoxitReader.png</iconUrl>
   </metadata>
 </package>
