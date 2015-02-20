@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>winscp</id>
-        <version>5.5.6</version>
+        <version>5.5.6.01</version>
         <title>WinSCP</title>
         <authors>Martin Přikryl</authors>
         <owners>H. Alan Stevens</owners>
