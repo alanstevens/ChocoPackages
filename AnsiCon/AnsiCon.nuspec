@@ -11,6 +11,13 @@
     <description>ANSICON provides ANSI escape sequences for Windows console programs.  It provides much the same functionality as `ANSI.SYS' does for MS-DOS.
     </description>
     <summary>ANSICON provides ANSI escape sequences for Windows console programs</summary>
+    <releaseNotes>
+      If you have an earlier version of this package installed, you may have to manually remove it.
+
+      Open regedit and navigate to HKEY_CURRENT_USER\Software\Microsoft\CommandProcessor. Open the AutoRun key and remove any references to ansicon.
+
+      In the chocolatey install folder, under lib, delete the ansicon folder. If you are unable to delete the folder, you will need to reboot.
+    </releaseNotes>
     <tags>console color ansi codes</tags>
   </metadata>
 </package>
