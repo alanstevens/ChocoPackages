@@ -1,7 +1,7 @@
 $packageName = 'FSViewer'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url = 'http://www.faststonesoft.net/DN/FSViewerSetup46.exe'
+$url = 'http://www.faststonesoft.net/DN/FSViewerSetup53.exe'
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
