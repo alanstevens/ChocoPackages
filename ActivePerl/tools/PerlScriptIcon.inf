@@ -1,0 +1,48 @@
+
+[version]
+Signature="$Windows NT$"
+
+[PerlScriptIconInstall]
+CopyFiles = PerlScriptIcon.Files.Inf
+AddReg    = PerlScriptIcon.AddReg
+
+[DefaultInstall]
+CopyFiles = PerlScriptIcon.Files.Inf
+AddReg    = PerlScriptIcon.AddReg
+
+[DefaultUnInstall]
+DelFiles  = PerlScriptIcon.Files.Inf
+DelReg    = PerlScriptIcon.DelReg
+
+[SourceDisksNames]
+55="Perl Script Icon","",1
+
+[SourceDisksFiles]
+PerlScriptIcon.INF=55
+
+[DestinationDirs]
+PerlScriptIcon.Files.Inf = 17
+
+[PerlScriptIcon.Files.Inf]
+PerlScriptIcon.INF
+
+[PerlScriptIcon.AddReg]
+HKLM,%UDHERE%,DisplayName,,"%DisplayName%"
+HKLM,%UDHERE%,DisplayVersion,,"%DisplayVersion%"
+HKCU,%UDHERE%,DisplayIcon,,"%ResourceDir%\perl.ico"
+HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\PerlScriptIcon.inf"
+HKCU,Software\Classes\.pl,,,"perlscript"
+HKCU,Software\Classes\.pl,Content Type,,"application/perlscript"
+HKCU,Software\Classes\perlscript,,,"Perl Script"
+HKCU,Software\Classes\perlscript\DefaultIcon,,,"""%ResourceDir%\perl.ico"""
+
+[PerlScriptIcon.DelReg]
+HKLM,%UDHERE%
+HKCU,Software\Classes\.pl
+HKCU,Software\Classes\perlscript
+
+[Strings]
+DisplayName="Perl Script Icon (Uninstall only)"
+DisplayVersion="1"
+UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\PerlScriptIcon"
+ResourceDir="CONTENT_PATH"

@@ -12,11 +12,10 @@ Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
 $toolsPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $parentPath = join-path $toolsPath '..'
-$contentPath = join-path $parentPath 'content'
-$infFile = join-path $contentPath 'PerlScriptIcon.inf'
+$infFile = join-path $toolsPath 'PerlScriptIcon.inf'
 
 # Update the inf file with the content path
-Get-Content $infFile | Foreach-Object{$_ -replace "CONTENT_PATH", "$contentPath"} | Set-Content 'TempFile.txt'
+Get-Content $infFile | Foreach-Object{$_ -replace "CONTENT_PATH", "$toolsPath"} | Set-Content 'TempFile.txt'
 move-item 'TempFile.txt' $infFile -Force
 
 # install the inf file
