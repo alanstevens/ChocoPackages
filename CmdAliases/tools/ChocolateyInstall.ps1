@@ -2,9 +2,8 @@
 $packageName = 'CmdAliases'
 
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$contentDir = $($toolsDir | Split-Path | Join-Path -ChildPath "content")
 $aliasFile = 'aliases.bat'
-$sourceFile = "$(join-path $contentDir $aliasFile)"
+$sourceFile = "$(join-path $toolsDir $aliasFile)"
 $targetFile = "$(join-path $env:userprofile $aliasFile)"
 
 #if file exists, create backup with timestamp in name
