@@ -13,6 +13,6 @@
         <tags>icon editor</tags>
         <!-- <licenseUrl>Shareware</licenseUrl>-->
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/IcoFx/IcoFx.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/IcoFx/IcoFx.png</iconUrl>
   </metadata>
 </package>

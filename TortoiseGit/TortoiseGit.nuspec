@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens,Matt Wrock,Pure Krome</owners>
         <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
         <projectUrl>http://code.google.com/p/tortoisegit/</projectUrl>
-        <iconUrl>http://code.google.com/p/tortoisegit/logo?cct=1325243386</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/TortoiseGit/TortoiseGit.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>TortoiseGit is the coolest Interface to (Git) Version Control. It is a port of TortoiseSVN for Git. TortoiseGit supports you with regular tasks, such as committing, showing logs, diffing two versions, creating branches and tags, creating patches and so on.
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>

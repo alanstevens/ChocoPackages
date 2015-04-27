@@ -8,7 +8,7 @@
         <owners>Jon Galloway,Alan Stevens,Matt Wrock</owners>
         <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
         <projectUrl>http://www.sublimetext.com/2</projectUrl>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/SublimeText2/Sublime_Text.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/SublimeText2/Sublime_Text.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Sublime Text 2 is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.
     This brings the Sublime Text portable version to your system</description>

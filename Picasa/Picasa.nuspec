@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens</owners>
         <!-- <licenseUrl></licenseUrl>-->
         <projectUrl>http://picasa.google.com/</projectUrl>
-        <iconUrl>http://screenshots.en.sftcdn.net/en/scrn/23000/23941/picasa-30.jpg</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/Picasa/Picasa.jpg</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Picasa is Google's free desktop photo management application. Picasa makes it really simple to take photos from your desktop and publish them online for others to see.
         </description>

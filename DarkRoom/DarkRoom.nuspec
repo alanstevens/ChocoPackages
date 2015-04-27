@@ -13,6 +13,6 @@
     <tags>distraction free text editor chocolatey</tags>
     <licenseUrl>https://raw.github.com/jjafuller/DarkRoomW/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/DarkRoom/DarkRoom.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/DarkRoom/DarkRoom.png</iconUrl>
   </metadata>
 </package>

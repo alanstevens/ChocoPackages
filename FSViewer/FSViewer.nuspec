@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens</owners>
         <!-- <licenseUrl></licenseUrl>-->
         <projectUrl>http://www.faststone.org/FSViewerDetail.htm</projectUrl>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/FSViewer/FSViewer.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/FSViewer/FSViewer.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>FastStone Image Viewer is a fast, stable, user-friendly image browser, converter and editor. It has a nice array of features that include image viewing, management, comparison, red-eye removal, emailing, resizing, cropping, retouching and color adjustments.
         </description>

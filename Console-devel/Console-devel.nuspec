@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens</owners>
         <licenseUrl>http://sourceforge.net/directory/license:osi-approved-open-source/gnu-general-public-license-gpl/</licenseUrl>
         <projectUrl>http://sourceforge.net/projects/console-devel/</projectUrl>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Console-devel/Console.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/Console-devel/Console.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>This is a development branch of Console by Marko Bozikovic (http://sourceforge.net/projects/console/). Console-devel adds a "Run Console" option to Explorer context menu, the ability to maintain a single instance of Console and the option to reuse open tabs to the core behavior of Console2.
         </description>

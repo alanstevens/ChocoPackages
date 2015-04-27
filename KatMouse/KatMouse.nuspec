@@ -13,6 +13,6 @@
     <tags>KatMouse scroll chocolatey</tags>
     <!-- <licenseUrl></licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KatMouse/KatMouse.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/KatMouse/KatMouse.png</iconUrl>
   </metadata>
 </package>

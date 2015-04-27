@@ -8,7 +8,7 @@
     <owners>H. Alan Stevens</owners>
     <!-- <licenseUrl></licenseUrl>-->
     <!-- <projectUrl></projectUrl>-->
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KickAssConsole/KickAssConsole.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/KickAssConsole/KickAssConsole.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An opinionated configuration of console-devel using the ir_black color scheme
     </description>

@@ -12,7 +12,7 @@
         <projectUrl>http://executor.dk/</projectUrl>
         <tags>executor run launcher chocolatey</tags>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Executor/Executor.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/Executor/Executor.png</iconUrl>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

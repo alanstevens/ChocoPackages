@@ -9,7 +9,7 @@
     <!-- <licenseUrl></licenseUrl>-->
     <projectUrl>http://antibody-software.com/web/software/software/wizmouse-makes-your-mouse-wheel-work-on-the-window-under-the-mouse/</projectUrl>
     <!--<iconUrl></iconUrl>-->
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/WizMouse/WizMouse.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/WizMouse/WizMouse.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       WizMouse is a mouse enhancement utility that makes your mouse wheel work on the window currently under the mouse pointer, instead of the currently focused window. This means you no longer have to click on a window before being able to scroll it with the mouse wheel. This is a far more comfortable and practical way to make use of the mouse wheel.
