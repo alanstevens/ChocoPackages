@@ -7,8 +7,7 @@
     <authors>Perforce Software,Inc.</authors>
     <owners>H. Alan Stevens</owners>
     <summary>P4Merge is an excellent, free diff and merge tool.</summary>
-    <description>P4Merge is an excellent, free diff and merge tool. Perforce Visual Merge and Diff Tools provide a unique perspective into the context in which change happens.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>P4Merge is an excellent, free diff and merge tool. Perforce Visual Merge and Diff Tools provide a unique perspective into the context in which change happens.</description>
     <projectUrl>http://www.perforce.com/product/components/perforce_visual_merge_and_diff_tools</projectUrl>
     <tags>diff merge</tags>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
