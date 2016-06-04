@@ -9,7 +9,7 @@
         <licenseUrl>http://www.opensource.org/licenses/artistic-license-2.0</licenseUrl>
         <projectUrl>http://strawberryperl.com</projectUrl>
         <!-- <iconUrl>http://win32.perl.org/wiki/images/b/b5/Strawberry_135x135.jpg</iconUrl>-->
-        <iconUrl>https://raw.github.com/alanstevens/ChocoPackages/master/StrawberryPerl/strawberry.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/StrawberryPerl/strawberry.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Strawberry Perl is a binary distribution of Perl for the Windows operating system. It includes a bundled compiler and pre-installed modules that offer the ability to install XS CPAN modules directly from CPAN.
             </description>

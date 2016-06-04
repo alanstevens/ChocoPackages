@@ -13,7 +13,7 @@
         <tags>perl chocolatey</tags>
         <licenseUrl>http://www.activestate.com/activeperl/license-agreement</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>http://www.activestate.com/sites/default/files/page/top_image/activeperldownload_headernew_0_0.png?1279571074</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/ActivePerl/ActivePerl.jpg</iconUrl>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

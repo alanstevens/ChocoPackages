@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens</owners>
         <licenseUrl>http://jpsoft.com/license.html</licenseUrl>
         <projectUrl>http://jpsoft.com/tccle_cmd_replacement.html</projectUrl>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/tcc/tcc.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/tcc/tcc.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>TCC/LE is a basic Windows command shell (formerly known as 4NT). TCC/LE is a replacement for the CMD command line (the default Windows command prompt). TCC/LE is a superset of CMD, with 111 internal commands (CMD has fewer than 40) and 240 internal variables and functions, and hundreds of enhancements to existing CMD commands. TCC/LE works with your existing command line applications and CMD batch files. But TCC/LE offers a big step up in command line and batch file capabilities, and adds thousands of new features to your command prompt windows.
         </description>

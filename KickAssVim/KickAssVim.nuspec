@@ -13,7 +13,7 @@
         <tags>vim editor vi</tags>
         <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/KickAssVim/KickAssVim.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/KickAssVim/KickAssVim.png</iconUrl>
         <dependencies>
             <dependency id="vim" version="[7.4,]" />
             <dependency id="ctags" />

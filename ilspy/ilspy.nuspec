@@ -6,7 +6,7 @@
     <owners>Jon Galloway, Alan Stevens</owners>
     <licenseUrl>https://github.com/icsharpcode/ILSpy#readme</licenseUrl>
     <projectUrl>http://wiki.sharpdevelop.net/ILSpy.ashx</projectUrl>
-    <iconUrl>http://cloud.ohloh.net/attachments/42278/ILSpy_med.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/ilspy/ILSpy_med.png</iconUrl>
     <id>ilspy</id>
     <title>ILSpy</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

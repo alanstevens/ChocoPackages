@@ -13,7 +13,7 @@
         <tags>growl chocolatey</tags>
         <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Growl/Growl.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/Growl/Growl.png</iconUrl>
         <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

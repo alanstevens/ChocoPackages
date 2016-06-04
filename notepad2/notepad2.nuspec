@@ -7,7 +7,7 @@
     <authors>Florian Balmer</authors>
     <owners>Anthony Mastrean</owners>
     <projectUrl>http://www.flos-freeware.ch/notepad2.html</projectUrl>
-    <iconUrl>https://github.com/AnthonyMastrean/nugetpackages/raw/notepad2/notepad2/notepad2.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/notepad2/notepad2/notepad2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A fast and light-weight Notepad-like text editor with syntax highlighting.</description>
     <summary>A fast and light-weight Notepad-like text editor with syntax highlighting.</summary>

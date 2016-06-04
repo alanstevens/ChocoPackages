@@ -8,7 +8,7 @@
         <owners>H. Alan Stevens</owners>
         <!-- <licenseUrl></licenseUrl>-->
         <projectUrl>http://www.xoring.com/</projectUrl>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/PomoTime/PomoTime.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/PomoTime/PomoTime.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>PomoTime is a small and easy to use Windows application that can come in handy for people that use the Pomodoro Technique. The Pomodoro Technique is an easy and effective method to focus on your job, manage interruptions and increase productivity.
         </description>

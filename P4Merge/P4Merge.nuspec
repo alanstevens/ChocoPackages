@@ -12,6 +12,6 @@
     <tags>diff merge</tags>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/P4Merge/p4merge.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/alanstevens/ChocoPackages/master/P4Merge/p4merge.png</iconUrl>
   </metadata>
 </package>
