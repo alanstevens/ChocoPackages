@@ -16,7 +16,7 @@ try
     }
 
     $params = @{
-        packageName = $package;
+        packageName = 'growl';
         fileType = 'exe';
         silentArgs = '/c:"msiexec -i Growl_v2.0.msi /qn"'
         url = 'http://www.growlforwindows.com/gfw/d.ashx?f=GrowlInstaller.exe';
