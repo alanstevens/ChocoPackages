@@ -3,19 +3,18 @@
     <metadata>
         <id>Growl</id>
         <title>Growl For Windows</title>
-        <version>2.0.9.20130406</version>
+        <version>2.0.9.20191201</version>
         <authors>Brian Dunnington</authors>
-        <owners>H. Alan Stevens,Ethan Brown</owners>
+        <owners>H. Alan Stevens,Ethan Brown,Patrick Wyatt</owners>
         <summary>Growl for Windows is a Windows-compatible version of Growl, a notification system for Mac OS X.</summary>
         <description>Growl for Windows is a Windows-compatible version of Growl, a notification system for Mac OS X. Growl lets you know when things happen. Files finished downloading, friends came online, new email has arrived - Growl can let you know when any event occurs with a subtle notification. The rest of the time, Growl stays out of your way.
         | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <projectUrl>http://www.growlforwindows.com/</projectUrl>
-        <tags>growl chocolatey</tags>
+        <tags>growl notification notification-service</tags>
         <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/Growl/Growl.png</iconUrl>
-        <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+        <iconUrl>https://github.com/webcoyote/ChocoPackages/raw/master/Growl/Growl.png</iconUrl>
+        <projectSourceUrl>https://github.com/briandunnington/growl-for-windows</projectSourceUrl>
+        <packageSourceUrl>https://github.com/webcoyote/ChocoPackages/tree/master/Growl</packageSourceUrl>
   </metadata>
 </package>
