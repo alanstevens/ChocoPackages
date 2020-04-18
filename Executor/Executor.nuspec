@@ -3,7 +3,7 @@
     <metadata>
         <id>Executor</id>
         <title>Executor</title>
-        <version>0.99.32-b</version>
+        <version>1.0.0</version>
         <authors>Martin Bresson</authors>
         <owners>H. Alan Stevens</owners>
         <packageSourceUrl>https://github.com/alanstevens/ChocoPackages/tree/master/Executor</packageSourceUrl>
